@@ -95,17 +95,21 @@
         <label for="range">Your programming level</label><br>
         <input type="range" name="range" id="range" max="10" value="0"><br><br>
         <p>What does HTML stand for?</p><br>
-        <!--Сделал через span, т.к. через p отступы (или через label надо было? тут нет атрибута ведь id)-->
-        <span><input type="checkbox" name="checkbox" value="hyperlinks">Hyperlinks and Text Markup Language"</span><br>
-        <span><input type="checkbox" name="checkbox" value="hometool">Home Tool Markup Language</span><br>
-        <span><input type="checkbox" name="checkbox" value="hypertext">Hyper Text Markup Language</span>
-        <br>
+        <input type="checkbox" name="checkbox" value="hyperlinks" id="hyperlinks">
+        <label for="hyperlinks">Hyperlinks and Text Markup Language</label><br>
+        <input type="checkbox" name="checkbox" value="hometool" id="hometool">
+        <label for="hometool">Home Tool Markup Language</label><br>
+        <input type="checkbox" name="checkbox" value="hypertext" id="hypertext">
+        <label for="hypertext">Hyper Text Markup Language</label><br>
         <p>What does HTTP stand for?</p>
-        <span><input type="radio" name="radio" value="translate">Hyper Text Translate Protocol"</span><br>
-        <span><input type="radio" name="radio" value="transmission">Hyper Text Transmission Protocol</span><br>
-        <span><input type="radio" name="radio" value="transfer">Hyper Text Transfer Protocol</span>
+        <input type="radio" name="radio" value="translate" id="translate">
+        <label for="translate">Hyper Text Translate Protocol</label><br>
+        <input type="radio" name="radio" value="transmission" id="transmission">
+        <label for="transmission">Hyper Text Transmission Protocol</label><br>
+        <input type="radio" name="radio" value="transfer" id="transfer">
+        <label for="transfer">Hyper Text Transfer Protocol</label>
         <br><label for="comment">Comment</label>
-        <br><textarea name="comment" id="comment" cols="30" rows="3" maxlength="500" placeholder="Comment"></textarea>
+        <br><textarea name="comment" id="comment" cols="30" rows="3" maxlength="500">Comment</textarea>
         <br><label for="select">What does HTML stand for?</label><br>
         <select name="select" id="select">
             <option>First answer</option>
