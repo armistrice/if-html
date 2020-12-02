@@ -1,0 +1,35 @@
+.mainblock {
+  font-family: "Roboto", sans-serif;
+  max-width: 1440px;
+}
+
+.title {
+  margin: 120px;
+  font-weight: 500;
+  font-size: 40;
+  text-align: center;
+}
+
+.border {
+  border-bottom: 4px solid #f5bd41;
+  width: 100px;
+  padding: 0 auto;
+}
+
+/* Я очень надеюсь что свойства ниже будем подробнее проходить */
+.images {
+  margin: 0 auto;
+  max-width: 1220px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.img {
+  width: 100%;
+  display: inline-block;
+}
+
+.text {
+  font-size: 24px;
+}
