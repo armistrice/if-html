@@ -11,18 +11,19 @@
 }
 
 .border {
+  display: block;
   border-bottom: 4px solid #f5bd41;
   width: 100px;
-  padding: 0 auto;
+  padding-bottom: 20px;
 }
 
-/* Я очень надеюсь что свойства ниже будем подробнее проходить */
 .images {
   margin: 0 auto;
   max-width: 1220px;
   display: flex;
   justify-content: space-between;
   align-self: center;
+  text-align: center;
 }
 
 .img {
@@ -32,4 +33,5 @@
 
 .text {
   font-size: 24px;
+  font-weight: 400;
 }
