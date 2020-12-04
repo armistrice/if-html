@@ -24,10 +24,15 @@
 }
 
 .images {
-  text-align: center;
-  align-items: center;
   display: flex;
   justify-content: space-around;
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .txt {
