@@ -1,5 +1,6 @@
 * {
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
   box-sizing: border-box;
 }
 
@@ -49,7 +50,37 @@
 }
 
 .item-text {
-  font-weight: 400;
   font-size: 24px;
   line-height: 28px;
+}
+
+.footer {
+  background: #10367c;
+  color: #fff;
+}
+
+.footer-top {
+  display: flex;
+}
+
+.footer-top-ul {
+  font-size: 20px;
+  padding-right: 223px;
+}
+
+.footer-top-ul-li {
+  padding-bottom: 24px;
+}
+
+.wt {
+  font-weight: 500;
+}
+
+.copyright {
+  padding-top: 40px;
+}
+
+.copyright-text {
+  font-size: 14px;
+  line-height: 16px;
 }
