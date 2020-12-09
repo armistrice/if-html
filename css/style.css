@@ -73,10 +73,7 @@
 
 .footer-top {
   display: flex;
-}
-
-.footer-top-block {
-  width: 410px;
+  justify-content: space-between;
 }
 
 ul li {
