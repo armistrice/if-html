@@ -84,14 +84,14 @@ ul li {
   font-weight: 500;
 }
 
-.links {
+.ul-text {
   text-decoration: none;
   color: #fff;
   font-size: 20px;
   line-height: 23px;
 }
 
-.links:hover {
+a:hover {
   border-bottom: 3px solid #fff;
 }
 
