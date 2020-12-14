@@ -14,7 +14,9 @@
     <div class="offers-container">
       <div class="offers-top-items">
         <div class="offers-top-left">
-          <div class="sprite logo"></div>
+          <a href="/">
+            <div class="sprite logo"></div>
+          </a>
         </div>
         <div class="offers-top-right">
           <div class="offers-top-right-links">
@@ -35,15 +37,20 @@
           <span>Check-in — Check-out</span>
         </div>
         <form action="/" method="get">
-          <input type="text" name="city" id="city" value="New York" class="offers-forms-inputs">
-          <input type="date" name="date" id="date" class="offers-forms-inputs">
+          <input type="text" name="city" id="city" placeholder="New York" class="offers-forms-inputs city">
+          <input type="date" name="date" id="date" class="offers-forms-inputs date">
           <input type="text" name="quantity" id="quantity" value="2 Adults — 0 Children — 1 Room"
-            class="offers-forms-inputs" readonly>
-          <input type="submit" value="Search" class="offers-forms-submit">
+            class="offers-forms-inputs quantity" readonly>
+          <input type="submit" value="Search" class="offers-forms-submit search">
         </form>
       </div>
       <div class="offers-buttons">
-
+        <a href="/">
+          <div class="sprite gp"></div>
+        </a>
+        <a href="/">
+          <div class="sprite as"></div>
+        </a>
       </div>
     </div>
   </section>
@@ -85,7 +92,7 @@
         <div class="footer-top">
           <div class="footer-top-block">
             <ul>
-              <li class="links wt">About</li>
+              <li class="fli">About</li>
               <li><a href="/" class="links">How Triphouse works</a></li>
               <li><a href="/" class="links">Careers</a></li>
               <li><a href="/" class="links">Privacy</a></li>
@@ -94,7 +101,7 @@
           </div>
           <div class="footer-top-block">
             <ul>
-              <li class="links wt">Property types</li>
+              <li class="fli">Property types</li>
               <li><a href="/" class="links">Guests houses</a></li>
               <li><a href="/" class="links">Hotels</a></li>
               <li><a href="/" class="links">Apartments</a></li>
@@ -105,7 +112,7 @@
           </div>
           <div class="footer-top-block">
             <ul>
-              <li class="links wt">Support</li>
+              <li class="fli">Support</li>
               <li><a href="/" class="links">Contact Customer Services</a></li>
               <li><a href="/" class="links">FAQ</a></li>
             </ul>
