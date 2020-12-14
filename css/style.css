@@ -24,20 +24,21 @@
 .container {
   max-width: 1232px;
   margin: 0 auto;
-  padding: 120px 0;
-  width: 100%;
 }
 
 .offers-top {
   background-image: url(../img/bg.png);
-  width: 1440px;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 900px;
 }
 
 .offers-container {
-  max-width: 1232px;
-  margin: 0 auto;
   padding: 50px 0 120px 0;
+}
+
+.padding-container {
+  padding: 120px 0;
 }
 
 .offers-top-items {
