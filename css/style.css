@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: "Roboto";
   src: url("../fonts/Roboto-Medium.woff2") format("woff2");
+  font-family: "Roboto";
   font-weight: 500;
   font-style: normal;
 }
@@ -26,6 +26,102 @@
   margin: 0 auto;
   padding: 120px 0;
   width: 100%;
+}
+
+.offers-top {
+  background-image: url(../img/bg.png);
+  width: 1440px;
+  height: 900px;
+}
+
+.offers-container {
+  max-width: 1232px;
+  margin: 0 auto;
+  padding: 50px 0 120px 0;
+}
+
+.offers-top-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offers-top-right,
+.offers-top-right-links,
+.offers-top-right-icons {
+  align-items: center;
+  display: flex;
+}
+
+.offers-top-right-links div {
+  margin-right: 24px;
+}
+
+.offers-top-right-icons div {
+  margin-left: 24px;
+}
+
+.sprite {
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+}
+
+.logo {
+  width: 205px;
+  height: 40px;
+  background-position: -460.814px bottom;
+}
+
+.theme {
+  width: 30px;
+  height: 30px;
+  background-position: -350px bottom;
+}
+
+.user {
+  width: 40px;
+  height: 42px;
+  background-position: -380px bottom;
+}
+
+.offers-h2 {
+  margin-top: 202px;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  color: #fff;
+}
+
+.offers-forms-label {
+  margin: 100px 0 24px 0;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+}
+
+.offers-forms-label span {
+  margin-right: 221px;
+}
+
+.offers-forms-inputs {
+  height: 64px;
+  background: #ffffff;
+  border: 3px solid #f3f3f4;
+  border-radius: 8px;
+}
+
+.offers-forms-submit {
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  height: 64px;
+  border-radius: 8px;
+  background: #3077c6;
+}
+
+.offers-forms-inputs:focus {
+  border: 3px solid #f5bd41;
 }
 
 .offers-title {
@@ -84,7 +180,7 @@ ul li {
   font-weight: 500;
 }
 
-.ul-text {
+.links {
   text-decoration: none;
   color: #fff;
   font-size: 20px;
