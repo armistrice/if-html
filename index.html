@@ -10,8 +10,52 @@
 </head>
 
 <body>
-  <div class="offers">
-    <div class="container">
+  <section class="offers-top">
+    <div class="container offers-container">
+      <div class="offers-top-items">
+        <div class="offers-top-left">
+          <a href="/">
+            <div class="sprite logo"></div>
+          </a>
+        </div>
+        <div class="offers-top-right">
+          <div class="offers-top-right-links">
+            <div><a class="links" href="/">Stays</a></div>
+            <div><a class="links" href="/">Attractions</a></div>
+          </div>
+          <div class="offers-top-right-icons">
+            <div class="sprite theme"></div>
+            <div class="sprite user"></div>
+          </div>
+        </div>
+      </div>
+      <h2 class="offers-h2">Discover stays<br>
+        to live, work or just relax</h2>
+      <div class="offers-forms">
+        <div class="offers-forms-label">
+          <span>Your destination or hotel name</span>
+          <span>Check-in — Check-out</span>
+        </div>
+        <form action="/" method="get">
+          <input type="text" name="city" id="city" placeholder="New York" class="offers-forms-inputs city">
+          <input type="date" name="date" id="date" class="offers-forms-inputs date">
+          <input type="text" name="quantity" id="quantity" value="2 Adults — 0 Children — 1 Room"
+            class="offers-forms-inputs quantity" readonly>
+          <input type="submit" value="Search" class="offers-forms-submit search">
+        </form>
+      </div>
+      <div class="offers-buttons">
+        <a href="/">
+          <div class="sprite gp"></div>
+        </a>
+        <a href="/">
+          <div class="sprite as"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="offers">
+    <div class="container padding-container">
       <h2 class="offers-title text-center">What do we offer</h2>
       <hr class="title-underline">
       <div class="offers-list">
@@ -41,36 +85,36 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <footer>
     <section class="footer">
-      <div class="container">
+      <div class="container padding-container">
         <div class="footer-top">
           <div class="footer-top-block">
             <ul>
-              <li class="ul-text wt">About</li>
-              <li><a href="/" class="ul-text">How Triphouse works</a></li>
-              <li><a href="/" class="ul-text">Careers</a></li>
-              <li><a href="/" class="ul-text">Privacy</a></li>
-              <li><a href="/" class="ul-text">Terms</a></li>
+              <li class="fli">About</li>
+              <li><a href="/" class="links">How Triphouse works</a></li>
+              <li><a href="/" class="links">Careers</a></li>
+              <li><a href="/" class="links">Privacy</a></li>
+              <li><a href="/" class="links">Terms</a></li>
             </ul>
           </div>
           <div class="footer-top-block">
             <ul>
-              <li class="ul-text wt">Property types</li>
-              <li><a href="/" class="ul-text">Guests houses</a></li>
-              <li><a href="/" class="ul-text">Hotels</a></li>
-              <li><a href="/" class="ul-text">Apartments</a></li>
-              <li><a href="/" class="ul-text">Villas</a></li>
-              <li><a href="/" class="ul-text">Holiday homes</a></li>
-              <li><a href="/" class="ul-text">Hostels</a></li>
+              <li class="fli">Property types</li>
+              <li><a href="/" class="links">Guests houses</a></li>
+              <li><a href="/" class="links">Hotels</a></li>
+              <li><a href="/" class="links">Apartments</a></li>
+              <li><a href="/" class="links">Villas</a></li>
+              <li><a href="/" class="links">Holiday homes</a></li>
+              <li><a href="/" class="links">Hostels</a></li>
             </ul>
           </div>
           <div class="footer-top-block">
             <ul>
-              <li class="ul-text wt">Support</li>
-              <li><a href="/" class="ul-text">Contact Customer Services</a></li>
-              <li><a href="/" class="ul-text">FAQ</a></li>
+              <li class="fli">Support</li>
+              <li><a href="/" class="links">Contact Customer Services</a></li>
+              <li><a href="/" class="links">FAQ</a></li>
             </ul>
           </div>
         </div>
