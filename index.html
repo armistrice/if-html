@@ -1,92 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <section class="offers-top">
-    <div class="container offers-container">
-      <div class="offers-top-items">
-        <div class="offers-top-left">
+  <body>
+    <section class="offers-top">
+      <div class="container offers-container">
+        <div class="offers-top-items">
+          <div class="offers-top-left">
+            <a href="/">
+              <div class="sprite logo"></div>
+            </a>
+          </div>
+          <div class="offers-top-right">
+            <div class="offers-top-right-links">
+              <div><a class="links" href="/">Stays</a></div>
+              <div><a class="links" href="/">Attractions</a></div>
+            </div>
+            <div class="offers-top-right-icons">
+              <div class="sprite theme"></div>
+              <div class="sprite user"></div>
+            </div>
+          </div>
+        </div>
+        <h2 class="offers-h2">
+          Discover stays<br />
+          to live, work or just relax
+        </h2>
+        <div class="offers-forms">
+          <div class="offers-forms-label">
+            <span>Your destination or hotel name</span>
+            <span>Check-in — Check-out</span>
+          </div>
+          <form action="/" method="get">
+            <input
+              type="text"
+              name="city"
+              id="city"
+              placeholder="New York"
+              class="offers-forms-inputs city"
+            />
+            <input
+              type="date"
+              name="date"
+              id="date"
+              class="offers-forms-inputs date"
+            />
+            <input
+              type="text"
+              name="quantity"
+              id="quantity"
+              value="2 Adults — 0 Children — 1 Room"
+              class="offers-forms-inputs quantity"
+              readonly
+            />
+            <input
+              type="submit"
+              value="Search"
+              class="offers-forms-submit search"
+            />
+          </form>
+        </div>
+        <div class="offers-buttons">
           <a href="/">
-            <div class="sprite logo"></div>
+            <div class="sprite gp"></div>
+          </a>
+          <a href="/">
+            <div class="sprite as"></div>
           </a>
         </div>
-        <div class="offers-top-right">
-          <div class="offers-top-right-links">
-            <div><a class="links" href="/">Stays</a></div>
-            <div><a class="links" href="/">Attractions</a></div>
+      </div>
+    </section>
+
+    <section class="offers">
+      <div class="container padding-container">
+        <h2 class="offers-title text-center">What do we offer</h2>
+        <hr class="title-underline" />
+        <div class="offers-list">
+          <div class="item">
+            <div class="img-wrapper">
+              <img src="img/headphones.svg" alt="Support" />
+            </div>
+            <span class="item-text">Support 24/7</span>
           </div>
-          <div class="offers-top-right-icons">
-            <div class="sprite theme"></div>
-            <div class="sprite user"></div>
+          <div class="item">
+            <div class="img-wrapper">
+              <img src="img/message.svg" alt="Communication" />
+            </div>
+            <span class="item-text">Communicate directly</span>
+          </div>
+          <div class="item">
+            <div class="img-wrapper">
+              <img src="img/phone.svg" alt="Booking" />
+            </div>
+            <span class="item-text">Book online</span>
+          </div>
+          <div class="item">
+            <div class="img-wrapper">
+              <img src="img/reviews.svg" alt="Reviews" />
+            </div>
+            <span class="item-text">Real guest reviews</span>
           </div>
         </div>
       </div>
-      <h2 class="offers-h2">Discover stays<br>
-        to live, work or just relax</h2>
-      <div class="offers-forms">
-        <div class="offers-forms-label">
-          <span>Your destination or hotel name</span>
-          <span>Check-in — Check-out</span>
-        </div>
-        <form action="/" method="get">
-          <input type="text" name="city" id="city" placeholder="New York" class="offers-forms-inputs city">
-          <input type="date" name="date" id="date" class="offers-forms-inputs date">
-          <input type="text" name="quantity" id="quantity" value="2 Adults — 0 Children — 1 Room"
-            class="offers-forms-inputs quantity" readonly>
-          <input type="submit" value="Search" class="offers-forms-submit search">
-        </form>
-      </div>
-      <div class="offers-buttons">
-        <a href="/">
-          <div class="sprite gp"></div>
-        </a>
-        <a href="/">
-          <div class="sprite as"></div>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="offers">
-    <div class="container padding-container">
-      <h2 class="offers-title text-center">What do we offer</h2>
-      <hr class="title-underline">
-      <div class="offers-list">
-        <div class="item">
-          <div class="img-wrapper">
-            <img src="img/headphones.svg" alt="Support">
-          </div>
-          <span class="item-text">Support 24/7</span>
-        </div>
-        <div class="item">
-          <div class="img-wrapper">
-            <img src="img/message.svg" alt="Communication">
-          </div>
-          <span class="item-text">Communicate directly</span>
-        </div>
-        <div class="item">
-          <div class="img-wrapper">
-            <img src="img/phone.svg" alt="Booking">
-          </div>
-          <span class="item-text">Book online</span>
-        </div>
-        <div class="item">
-          <div class="img-wrapper">
-            <img src="img/reviews.svg" alt="Reviews">
-          </div>
-          <span class="item-text">Real guest reviews</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer>
+    </section>
+
     <section class="footer">
       <div class="container padding-container">
         <div class="footer-top">
@@ -121,8 +144,8 @@
         <div class="footer-bottom">
           <p>2020 Triphouse. All rights reserved</p>
         </div>
+      </div>
     </section>
-  </footer>
-</body>
-
+    
+  </body>
 </html>
