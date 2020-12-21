@@ -3,149 +3,133 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css" />
+    <title>Triphouse</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/ico/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/ico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/ico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/ico/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/ico/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
 
   <body>
-    <section class="offers-top">
-      <div class="container offers-container">
-        <div class="offers-top-items">
-          <div class="offers-top-left">
-            <a href="/">
-              <div class="sprite logo"></div>
-            </a>
-          </div>
-          <div class="offers-top-right">
-            <div class="offers-top-right-links">
-              <div><a class="links" href="/">Stays</a></div>
-              <div><a class="links" href="/">Attractions</a></div>
-            </div>
-            <div class="offers-top-right-icons">
-              <div class="sprite theme"></div>
-              <div class="sprite user"></div>
-            </div>
-          </div>
-        </div>
-        <h2 class="offers-h2">
-          Discover stays<br />
-          to live, work or just relax
-        </h2>
-        <div class="offers-forms">
-          <div class="offers-forms-label">
-            <span>Your destination or hotel name</span>
-            <span>Check-in — Check-out</span>
-          </div>
-          <form action="/" method="get">
-            <input
-              type="text"
-              name="city"
-              id="city"
-              placeholder="New York"
-              class="offers-forms-inputs city"
-            />
-            <input
-              type="date"
-              name="date"
-              id="date"
-              class="offers-forms-inputs date"
-            />
-            <input
-              type="text"
-              name="quantity"
-              id="quantity"
-              value="2 Adults — 0 Children — 1 Room"
-              class="offers-forms-inputs quantity"
-              readonly
-            />
-            <input
-              type="submit"
-              value="Search"
-              class="offers-forms-submit search"
-            />
-          </form>
-        </div>
-        <div class="offers-buttons">
-          <a href="/">
-            <div class="sprite gp"></div>
-          </a>
-          <a href="/">
-            <div class="sprite as"></div>
-          </a>
-        </div>
-      </div>
+    <section class="header">
+      
     </section>
 
-    <section class="offers">
-      <div class="container padding-container">
-        <h2 class="offers-title text-center">What do we offer</h2>
-        <hr class="title-underline" />
-        <div class="offers-list">
-          <div class="item">
-            <div class="img-wrapper">
-              <img src="img/headphones.svg" alt="Support" />
+    <section class="offer">
+      <div class="container">
+        <div class="offer__inner">
+          <div class="title">What do we offer</div>
+          <div class="images offer__images">
+            <div class="images__wrapper">
+              <svg class="images__icon images__headphones">
+                <use href="#headphones" />
+                </svg>
+              <p class="images__text">Support 24/7</p>
             </div>
-            <span class="item-text">Support 24/7</span>
-          </div>
-          <div class="item">
-            <div class="img-wrapper">
-              <img src="img/message.svg" alt="Communication" />
+            <div class="images__wrapper">
+              <svg class="images__icon images__message">
+                <use href="#message" />
+                </svg>
+              <p class="images__text">Communicate directly</p>
             </div>
-            <span class="item-text">Communicate directly</span>
-          </div>
-          <div class="item">
-            <div class="img-wrapper">
-              <img src="img/phone.svg" alt="Booking" />
+            <div class="images__wrapper">
+              <svg class="images__icon images__phone">
+                <use href="#phone" />
+                </svg>
+              <p class="images__text">Book online</p>
             </div>
-            <span class="item-text">Book online</span>
-          </div>
-          <div class="item">
-            <div class="img-wrapper">
-              <img src="img/reviews.svg" alt="Reviews" />
+            <div class="images__wrapper">
+              <svg class="images__icon images__reviews">
+                <use href="#reviews" />
+                </svg>
+              <p class="images__text">Real guest reviews</p>
             </div>
-            <span class="item-text">Real guest reviews</span>
           </div>
         </div>
       </div>
     </section>
 
     <section class="footer">
-      <div class="container padding-container">
-        <div class="footer-top">
-          <div class="footer-top-block">
-            <ul>
-              <li class="fli">About</li>
-              <li><a href="/" class="links">How Triphouse works</a></li>
-              <li><a href="/" class="links">Careers</a></li>
-              <li><a href="/" class="links">Privacy</a></li>
-              <li><a href="/" class="links">Terms</a></li>
-            </ul>
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__navigation">
+            <div class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item footer__menu-item-weight">About</li>
+                <li class="footer__menu-item"><a class="footer-link" href="">How Triphouse works</a></li>
+                <li class="footer__menu-item"><a class="footer-link" href="">Career</a></li>
+                <li class="footer__menu-item"><a class="footer-link" href="">Privacy</a></li>
+                <li class="footer__menu-item"><a class="footer-link" href="">Terms</a></li>
+              </ul>
+            </div>
+            <div class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item footer__menu-item-weight" >Property types</li>
+                <li class="footer__menu-item"><a class="footer-link" href="">Guest houses</a></li>
+                <li class="footer__menu-item"><a class="footer-link" href="">Hotels</a></li>
+                <li class="footer__menu-item"><a class="footer-link" href="">Apartments</a></li>
+                <li class="footer__menu-item"><a class="footer-link" href="">Villas</a></li>
+                <li class="footer__menu-item"><a class="footer-link" href="">Holiday homes</a></li>
+                <li class="footer__menu-item"><a class="footer-link" href="">Hostels</a></li>
+              </ul>
+            </div>
+            <div class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item footer__menu-item-weight">Support</li>
+                <li class="footer__menu-item"><a class="footer-link" href="">Contact Customer Service</a></li>
+                <li class="footer__menu-item"><a class="footer-link" href="">FAQ</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="footer-top-block">
-            <ul>
-              <li class="fli">Property types</li>
-              <li><a href="/" class="links">Guests houses</a></li>
-              <li><a href="/" class="links">Hotels</a></li>
-              <li><a href="/" class="links">Apartments</a></li>
-              <li><a href="/" class="links">Villas</a></li>
-              <li><a href="/" class="links">Holiday homes</a></li>
-              <li><a href="/" class="links">Hostels</a></li>
-            </ul>
+          <div class="footer__copyright footer__copyright-text">
+            &#169; 2020 Triphouse, Inc. All rights reserved
           </div>
-          <div class="footer-top-block">
-            <ul>
-              <li class="fli">Support</li>
-              <li><a href="/" class="links">Contact Customer Services</a></li>
-              <li><a href="/" class="links">FAQ</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>2020 Triphouse. All rights reserved</p>
         </div>
       </div>
     </section>
-    
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="sprite">
+      <symbol id="headphones">
+      <path
+      d="M67.167 54.333V71h-8.334V54.333h8.334zm-50 0V71H13a4.179 4.179 0 01-4.167-4.167v-12.5h8.334zM38 .167C17.292.167.5 16.958.5 37.667v29.166c0 6.917 5.583 12.5 12.5 12.5h12.5V46H8.833v-8.333C8.833 21.542 21.875 8.5 38 8.5s29.167 13.042 29.167 29.167V46H50.5v33.333h16.667V83.5H38v8.333h25c6.917 0 12.5-5.583 12.5-12.5V37.667c0-20.709-16.792-37.5-37.5-37.5z">
+      </symbol>
+      <symbol id="message">
+      <path
+      d="M54.5 8.667v29.166H13.542l-4.875 4.875V8.667H54.5zM58.667.333H4.5A4.179 4.179 0 00.333 4.5v58.333L17 46.167h41.667A4.179 4.179 0 0062.833 42V4.5A4.179 4.179 0 0058.667.333zM79.5 17h-8.333v37.5H17v8.333A4.179 4.179 0 0021.167 67H67l16.667 16.667v-62.5A4.179 4.179 0 0079.5 17z"
+      />
+      </symbol>
+      <symbol id="phone">
+      <path
+      d="M16.667 9h75V.667h-75C12.083.667 8.333 4.417 8.333 9v45.833H0v12.5h58.333v-12.5H16.667V9zm79.166 8.333h-25a4.179 4.179 0 00-4.166 4.167v41.667a4.179 4.179 0 004.166 4.166h25A4.179 4.179 0 00100 63.167V21.5a4.179 4.179 0 00-4.167-4.167zm-4.166 37.5H75V25.667h16.667v29.166z"
+      />
+      </symbol>
+      <symbol id="reviews">
+      <path
+      d="M83.5 29.333H57.208l3.959-19.041.125-1.334a6.272 6.272 0 00-1.834-4.416L55.042.167 27.625 27.625a8.147 8.147 0 00-2.458 5.875v41.667c0 4.583 3.75 8.333 8.333 8.333H71a8.277 8.277 0 007.667-5.083L91.25 49.042A8.232 8.232 0 0091.833 46v-8.333c0-4.584-3.75-8.334-8.333-8.334zM83.5 46L71 75.167H33.5V33.5l18.083-18.083-4.625 22.25H83.5V46zM.167 33.5h16.666v50H.167v-50z"
+      />
+      </symbol>
+      </svg>
   </body>
 </html>
