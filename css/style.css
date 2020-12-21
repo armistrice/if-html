@@ -73,37 +73,6 @@ body {
   margin-top: 48px;
 }
 
-.sprite {
-  position: absolute;
-  visibility: hidden;
-  height: 0;
-  width: 0;
-}
-
-.images__icon {
-  fill: #3077c6;
-}
-
-.images__headphones {
-  width: 75px;
-  height: 91.67px;
-}
-
-.images__message {
-  width: 83.33px;
-  height: 83.33px;
-}
-
-.images__phone {
-  width: 100px;
-  height: 66.67px;
-}
-
-.images__reviews {
-  width: 91.67px;
-  height: 83.33px;
-}
-
 .footer {
   background: #10367c;
   color: #fff;
@@ -139,4 +108,60 @@ body {
 .footer__copyright-text {
   font-size: 14px;
   line-height: 16px;
+}
+
+.sprite {
+  position: absolute;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+.images__icon {
+  fill: #3077c6;
+}
+
+.images__headphones {
+  width: 75px;
+  height: 91.67px;
+}
+
+.images__message {
+  width: 83.33px;
+  height: 83.33px;
+}
+
+.images__phone {
+  width: 100px;
+  height: 66.67px;
+}
+
+.images__reviews {
+  width: 91.67px;
+  height: 83.33px;
+}
+
+.logo {
+  width: 205px;
+  height: 50px;
+}
+
+.theme {
+  width: 38px;
+  height: 38px;
+}
+
+.account {
+  width: 40px;
+  height: 40px;
+}
+
+.googleplay {
+  width: 135px;
+  height: 40px;
+}
+
+.appstore {
+  width: 120px;
+  height: 40px;
 }
