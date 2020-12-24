@@ -37,6 +37,27 @@ body {
   padding: 120px 0;
 }
 
+.header {
+  background: url(../img/bg.png) no-repeat center;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.header__header,
+.header__ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__items {
+  margin-right: 24px;
+}
+
+.header__items:nth-child(2) {
+  margin-right: 48px;
+}
+
 .title {
   font-weight: 500;
   font-size: 40px;
@@ -97,7 +118,7 @@ body {
   font-weight: 500;
 }
 
-.footer-link {
+.links {
   color: #fff;
 }
 
@@ -119,6 +140,10 @@ body {
 
 .images__icon {
   fill: #3077c6;
+}
+
+.images__icon--white {
+  fill: #fff;
 }
 
 .images__headphones {
