@@ -13,7 +13,6 @@
 }
 
 * {
-  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
 
@@ -26,6 +25,143 @@ a {
 }
 
 body {
+  font-family: "Roboto", sans-serif;
+  color: #383838;
+}
+
+.header {
+  background: no-repeat url("../img/bg.png");
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  max-width: 1232px;
+  margin: 0 auto;
+  padding: 50px 15px 120px 15px;
+}
+
+.header__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__links {
+  margin-right: 24px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.nav__links--hov:hover {
+  border-bottom: 4px solid #f5bd41;
+}
+
+.header__title {
+  margin-top: 202px;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  color: #fff;
+}
+
+.header__content {
+  margin-top: 100px;
+}
+
+.header__span {
+  margin-right: 225px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+}
+
+.header__inputs {
+  margin-top: 24px;
+}
+
+.inputs {
+  font-size: 18px;
+  line-height: 21px;
+  background: #ffffff;
+  border: 3px solid #f3f3f4;
+  height: 64px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.inputs:focus {
+  border: 3px solid #f5bd41;
+}
+
+.header__inputs-city {
+  width: 39%;
+  padding-left: 24px;
+}
+
+.header__inputs-date {
+  width: 14%;
+  text-align: center;
+}
+
+.header__inputs-quantity {
+  width: 30%;
+  text-align: center;
+}
+
+.header__inputs-search {
+  border: 0;
+  background: #3077c6;
+  color: #fff;
+  width: 16%;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.header__apps {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.header__apps-links {
+  margin-right: 16px;
+}
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+/* body {
   font-family: Roboto;
   color: #383838;
 }
@@ -34,7 +170,7 @@ body {
   max-width: 1232px;
   min-width: 320px;
   margin: 0 auto;
-  padding: 120px 0;
+  padding: 51px 0 120px 0;
 }
 
 .header {
@@ -56,6 +192,10 @@ body {
 
 .header__items:nth-child(2) {
   margin-right: 48px;
+}
+
+.offer__inner {
+  margin-top: 69px;
 }
 
 .title {
@@ -129,7 +269,7 @@ body {
 .footer__copyright-text {
   font-size: 14px;
   line-height: 16px;
-}
+} */
 
 .sprite {
   position: absolute;
