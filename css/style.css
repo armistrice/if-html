@@ -26,6 +26,7 @@ a {
 }
 
 body {
+  min-width: 480px;
   font-family: "Roboto", sans-serif;
   color: #383838;
 }
@@ -276,4 +277,154 @@ body {
 .appstore {
   width: 120px;
   height: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* For mobile phones: */
+  .col-m-1 {
+    width: 8.33%;
+  }
+  .col-m-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+
+  .container {
+    padding: 40px 16px;
+  }
+
+  .offer__title {
+    margin-top: 0px;
+    margin-bottom: 32px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .title--active::after {
+    display: none;
+  }
+
+  .advantages__img-wrapper {
+    margin-bottom: 24px;
+    width: 100%;
+    width: 70px;
+    height: 70px;
+  }
+
+  .advantages__text {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .headphones {
+    width: 52.5px;
+    height: 64.17px;
+  }
+
+  .message {
+    width: 58.33px;
+    height: 58.33px;
+  }
+
+  .phone {
+    width: 70px;
+    height: 40.67px;
+  }
+
+  .reviews {
+    width: 64.17px;
+    height: 58.33px;
+  }
+
+  .footer__navigation {
+    margin-top: 0;
+  }
+
+  .nav__list {
+    margin-bottom: 32px;
+  }
+
+  .nav__list-item:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  .nav__link {
+    display: none;
+  }
+
+  .copyright {
+    text-align: center;
+  }
 }
