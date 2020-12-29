@@ -1,142 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <!-- <link rel="stylesheet" href="css/reset.css" /> -->
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-
-  <section class="header">
-    <div class="container">
-      <div class="header__inner">
-        <header class="header__header">
-          <div class="header__logo">
-            <a class="header__logo-link" href="">
-              <svg class="blueicon-sprite logo">
-                <use href="#logo" />
-              </svg>
-            </a>
+  <body>
+    <!-- <section class="header">
+      <div class="container">
+        <div class="header__inner">
+          <header class="header__header">
+            <div class="header__logo">
+              <a class="header__logo-link" href="">
+                <svg class="blueicon-sprite logo">
+                  <use href="#logo" />
+                </svg>
+              </a>
+            </div>
+            <nav class="nav">
+              <a class="nav__links nav__links--active" href="">Stays</a>
+              <a class="nav__links nav__links--active" href="">Attractions</a>
+              <a class="nav__links" href="">
+                <svg class="whiteicon-sprite theme">
+                  <use href="#theme" />
+                </svg>
+              </a>
+              <a class="nav__links" href="">
+                <svg class="whiteicon-sprite account">
+                  <use href="#account" />
+                </svg>
+              </a>
+            </nav>
+          </header>
+          <div class="header__title">
+            Discover stays<br />
+            to live, work or just relax
           </div>
-          <nav class="nav">
-            <a class="nav__links nav__links--active" href="">Stays</a>
-            <a class="nav__links nav__links--active" href="">Attractions</a>
-            <a class="nav__links" href="">
-              <svg class="whiteicon-sprite theme">
-                <use href="#theme" />
-              </svg>
-            </a>
-            <a class="nav__links" href="">
-              <svg class="whiteicon-sprite account">
-                <use href="#account" />
-              </svg>
-            </a>
-          </nav>
-        </header>
-
-        <div class="header__title">
-          Discover stays<br>
-          to live, work or just relax
-        </div>
-        <div class="header__content">
-          <div class="header__desc">
-            <span class="header__span">Your destination or hotel name</span>
-            <span class="header__span">Check-in — Check-out</span>
-          </div>
-          <div class="header__inputs">
-            <form action="" method="get">
-
+          <div class="header__content">
+            <div class="header__desc">
+              <span class="header__span">Your destination or hotel name</span>
+              <span class="header__span">Check-in — Check-out</span>
+            </div>
+            <form action="" method="get" class="form">
+              <div class="form__wrapper">
+                <input
+                  class="form__input"
+                  type="text"
+                  name="city"
+                  id="city"
+                  placeholder="New York"
+                />
+              </div>
+              <div class="form__wrapper">
+                <input class="form__input" type="date" name="date" id="date" />
+              </div>
+              <div class="form__wrapper">
+                <input
+                  class="form__input"
+                  type="text"
+                  name="quantity"
+                  id="quantity"
+                  value="2 Adults — 0 Children — 1 Room"
+                />
+              </div>
+              <div class="form__wrapper">
+                <input class="form__input" type="button" value="Search" />
+              </div>
             </form>
           </div>
-        </div>
-        <!-- <div class="header__apps">
-          <a class="header__apps-links" href="">
-            <svg class="googleplay">
-              <use href="#googleplay" />
-            </svg>
-          </a>
-          <a class="header__apps-links" href="">
-            <svg class="appstore">
-              <use href="#appstore" />
-            </svg>
-          </a>
-        </div> -->
-      </div>
-    </div>
-  </section>
-
-  <section class="offer">
-    <div class="container">
-      <div class="offer__inner">
-        <div class="offer__title">What do we offer</div>
-        <div class="offer__images row">
-          <div class="offer__images-wrapper col">
-            <svg class="blueicon-sprite headphones">
-              <use href="#headphones" />
-            </svg>
-            <p class="offer__images-text">Support 24/7</p>
-          </div>
-          <div class="offer__images-wrapper col">
-            <svg class="blueicon-sprite message">
-              <use href="#message" />
-            </svg>
-            <p class="offer__images-text">Communicate directly</p>
-          </div>
-          <div class="offer__images-wrapper col">
-            <svg class="blueicon-sprite phone">
-              <use href="#phone" />
-            </svg>
-            <p class="offer__images-text">Book online</p>
-          </div>
-          <div class="offer__images-wrapper col">
-            <svg class="blueicon-sprite reviews">
-              <use href="#reviews" />
-            </svg>
-            <p class="offer__images-text">Real guest reviews</p>
+          <div class="app header__app">
+            <a class="app__link" href="">
+              <svg class="googleplay">
+                <use href="#googleplay" />
+              </svg>
+            </a>
+            <a class="app__link" href="">
+              <svg class="appstore">
+                <use href="#appstore" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section> -->
 
-  <section class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <nav class="nav nav--align">
-          <ul class="nav__ul">
-            <li class="nav__ul-item nav__ul-item--wt">About</li>
-            <li class="nav__ul-item"><a class="nav__links" href="">How Triphouse works</a></li>
-            <li class="nav__ul-item"><a class="nav__links" href="">Careers</a></li>
-            <li class="nav__ul-item"><a class="nav__links" href="">Privacy</a></li>
-            <li class="nav__ul-item"><a class="nav__links" href="">Terms</a></li>
+
+    <section class="offer">
+      <div class="container">
+        <h2 class="offer__title title title--active">What do we offer</h2>
+        <div class="advantages">
+          <div class="advantages__item">
+            <div class="advantages__img-wrapper">
+              <svg class="blueicon-sprite headphones">
+                <use href="#headphones" />
+              </svg>
+            </div>
+            <p class="advantages__text">Support 24/7</p>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__img-wrapper">
+              <svg class="blueicon-sprite message">
+                <use href="#message" />
+              </svg>
+            </div>
+            <p class="advantages__text">Communicate directly</p>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__img-wrapper">
+              <svg class="blueicon-sprite phone">
+                <use href="#phone" />
+              </svg>
+            </div>
+            <p class="advantages__text">Book online</p>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__img-wrapper">
+              <svg class="blueicon-sprite reviews">
+                <use href="#reviews" />
+              </svg>
+            </div>
+            <p class="advantages__text">Real guest reviews</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <nav class="footer__navigation nav">
+          <ul class="nav__list">
+            <li class="nav__list-item nav__list-item--wt">About</li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#">How Triphouse works</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#">Careers</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#">Privacy</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#">Terms</a>
+            </li>
           </ul>
-          <ul class="nav__ul">
-            <li class="nav__ul-item nav__ul-item--wt">Property types</li>
-            <li class="nav__ul-item"><a class="nav__links" href="">Guest houses</a></li>
-            <li class="nav__ul-item"><a class="nav__links" href="">Hotels</a></li>
-            <li class="nav__ul-item"><a class="nav__links" href="">Apartments</a></li>
-            <li class="nav__ul-item"><a class="nav__links" href="">Villas</a></li>
-            <li class="nav__ul-item"><a class="nav__links" href="">Holiday homes</a></li>
-            <li class="nav__ul-item"><a class="nav__links" href="">Hostels</a></li>
+          <ul class="nav__list">
+            <li class="nav__list-item nav__list-item--wt">Property types</li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#">Guest houses</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#">Hotels</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#">Apartments</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#">Villas</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#">Holiday homes</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#">Hostels</a>
+            </li>
           </ul>
-          <ul class="nav__ul">
-            <li class="nav__ul-item nav__ul-item--wt">Support</li>
-            <li class="nav__ul-item"><a class="nav__links" href="">Contact Customer Service</a></li>
-            <li class="nav__ul-item"><a class="nav__links" href="">FAQ</a></li>
+          <ul class="nav__list">
+            <li class="nav__list-item nav__list-item--wt">Support</li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#">Contact Customer Service</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#">FAQ</a>
+            </li>
           </ul>
         </nav>
-        <div class="footer__copyright">
+        <span class="copyright">
           &copy; 2020 Triphouse, Inc. All rights reserved
-        </div>
+        </span>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <svg xmlns="http://www.w3.org/2000/svg" class="sprite">
+    <svg xmlns="http://www.w3.org/2000/svg" class="sprite">
     <symbol id="headphones">
       <path
         d="M67.167 54.333V71h-8.334V54.333h8.334zm-50 0V71H13a4.179 4.179 0 01-4.167-4.167v-12.5h8.334zM38 .167C17.292.167.5 16.958.5 37.667v29.166c0 6.917 5.583 12.5 12.5 12.5h12.5V46H8.833v-8.333C8.833 21.542 21.875 8.5 38 8.5s29.167 13.042 29.167 29.167V46H50.5v33.333h16.667V83.5H38v8.333h25c6.917 0 12.5-5.583 12.5-12.5V37.667c0-20.709-16.792-37.5-37.5-37.5z">
@@ -234,6 +281,5 @@
         fill="#fff" />
     </symbol>
   </svg>
-</body>
-
+  </body>
 </html>
