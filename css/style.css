@@ -38,7 +38,7 @@ body {
   padding: 50px 16px 120px 16px;
 }
 
-/* .header {
+.header {
   background: no-repeat center url("../img/bg.png");
   background-size: cover;
 }
@@ -127,7 +127,7 @@ body {
 
 .app-link {
   margin-right: 16px;
-} */
+}
 
 .offer__title {
   margin-top: 70px;
