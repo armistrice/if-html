@@ -156,7 +156,6 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .advantages__item {
@@ -168,7 +167,6 @@ body {
   width: 100px;
   height: 100px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 48px;
 }
@@ -279,152 +277,97 @@ body {
   height: 40px;
 }
 
-@media only screen and (max-width: 768px) {
-  /* For tablets: */
-  .col-s-1 {
-    width: 8.33%;
-  }
-  .col-s-2 {
-    width: 16.66%;
-  }
-  .col-s-3 {
-    width: 25%;
-  }
-  .col-s-4 {
-    width: 33.33%;
-  }
-  .col-s-5 {
-    width: 41.66%;
-  }
-  .col-s-6 {
-    width: 50%;
-  }
-  .col-s-7 {
-    width: 58.33%;
-  }
-  .col-s-8 {
-    width: 66.66%;
-  }
-  .col-s-9 {
-    width: 75%;
-  }
-  .col-s-10 {
-    width: 83.33%;
-  }
-  .col-s-11 {
-    width: 91.66%;
-  }
-  .col-s-12 {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  /* For mobile phones: */
-  .col-m-1 {
-    width: 8.33%;
-  }
-  .col-m-2 {
-    width: 16.66%;
-  }
-  .col-m-3 {
-    width: 25%;
-  }
-  .col-m-4 {
-    width: 33.33%;
-  }
-  .col-m-5 {
-    width: 41.66%;
-  }
-  .col-m-6 {
-    width: 50%;
-  }
-  .col-m-7 {
-    width: 58.33%;
-  }
-  .col-m-8 {
-    width: 66.66%;
-  }
-  .col-m-9 {
-    width: 75%;
-  }
-  .col-m-10 {
-    width: 83.33%;
-  }
-  .col-m-11 {
-    width: 91.66%;
-  }
-  .col-m-12 {
-    width: 100%;
-  }
-
+@media screen only and (max-width: 420px) {
   .container {
+    max-width: 328px;
     padding: 40px 16px;
+    margin: 0 auto;
+    width: 100%;
   }
 
-  .offer__title {
-    margin-top: 0px;
-    margin-bottom: 32px;
+  .offer {
+    background: #fff;
   }
 
   .title {
+    font-weight: 500;
     font-size: 28px;
     line-height: 33px;
+    text-align: center;
   }
 
-  .title--active::after {
-    display: none;
+  .offer__title {
+    margin-bottom: 32px;
+  }
+
+  .advantages {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .advantages__item {
+    margin-bottom: 32px;
+  }
+
+  .advantages__item:nth-last-child(1) {
+    margin-bottom: 0;
   }
 
   .advantages__img-wrapper {
-    margin-bottom: 24px;
-    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 16px;
     width: 70px;
     height: 70px;
   }
 
-  .advantages__text {
-    font-size: 15px;
-    line-height: 18px;
-  }
-
-  .headphones {
-    width: 52.5px;
-    height: 64.17px;
-  }
-
-  .message {
-    width: 58.33px;
-    height: 58.33px;
-  }
-
-  .phone {
+  .img {
+    max-width: 100%;
     width: 70px;
-    height: 40.67px;
+    height: 70px;
   }
 
-  .reviews {
-    width: 64.17px;
-    height: 58.33px;
+  .footer {
+    background: #10367c;
+  }
+
+  .logo {
+    display: block;
+    text-align: center;
   }
 
   .footer__navigation {
-    margin-top: 0;
+    margin: 40px 0 32px 0;
   }
 
-  .nav__list {
-    margin-bottom: 32px;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .nav__list-item:nth-last-child(1) {
-    margin-bottom: 0;
+  .nav__list-item {
+    margin-right: 16px;
+  }
+
+  .nav__list-item--wt {
+    font-weight: 500;
+    pointer-events: none;
+    cursor: default;
   }
 
   .nav__link {
-    display: none;
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration-line: underline;
   }
 
   .copyright {
     text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
   }
 }
