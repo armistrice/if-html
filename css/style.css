@@ -260,7 +260,7 @@ body {
     margin: 0 auto;
     width: 85px;
     height: 85px;
-    display: flex;s
+    display: flex;
     align-items: center;
     margin-bottom: 48px;
   }
@@ -362,7 +362,7 @@ body {
     margin: 0 auto;
     width: 100px;
     height: 100px;
-    display: flex;s
+    display: flex;
     align-items: center;
     margin-bottom: 48px;
   }
@@ -419,8 +419,6 @@ body {
     text-align: left;
   }
 }
-
-
 
 /* .sprite {
   position: absolute;
