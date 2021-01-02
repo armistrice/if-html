@@ -46,18 +46,18 @@
           </div>
           <nav class="header__menu">
             <ul class="header__menu-list">
-              <li class="header__menu-item header__menu-item--underline">
+              <li class="header__menu-item header__menu-item--active">
                 <a class="header__menu-link" href="#">Stays</a>
               </li>
-              <li class="header__menu-item header__menu-item--underline">
+              <li class="header__menu-item header__menu-item--active">
                 <a class="header__menu-link" href="#">Attractions</a>
               </li>
-              <li class="header__menu-item">
+              <li class="header__menu-item header__ico-theme">
                 <a class="header__menu-link" href="#"
                   ><img class="img" src="img/theme.svg"
                 /></a>
               </li>
-              <li class="header__menu-item">
+              <li class="header__menu-item header__ico-account">
                 <a class="header__menu-link" href="#"
                   ><img class="img" src="/img/account.svg"
                 /></a>
@@ -74,6 +74,7 @@
           >
           <span class="header__description-text">Check-in — Check-out</span>
         </div>
+        <!-- For PC -->
         <form class="header__form" action="/" method="GET">
           <div class="header__form-wrap">
             <input
@@ -103,7 +104,40 @@
             />
           </div>
         </form>
-
+        <!-- For mobile phones -->
+        <form class="header__form-mobile" action="/" method="GET">
+          <div class="header__form-mobile-wrap">
+            <input
+              type="text"
+              class="header__form-mobile-input header__form-mobile-input--city"
+              placeholder="Your destination or hotel name"
+            />
+          </div>
+          <div class="header__form-mobile-wrap">
+            <input
+              type="date"
+              class="header__form-mobile-input header__form-mobile-input--date"
+            />
+            <input
+              type="date"
+              class="header__form-mobile-input header__form-mobile-input--date"
+            />
+          </div>
+          <div class="header__form-mobile-wrap">
+            <input
+              type="text"
+              class="header__form-mobile-input header__form-mobile-input--quantity"
+              value="2 Adults — 0 Children — 1 Room"
+            />
+          </div>
+          <div class="header__form-mobile-wrap">
+            <input
+              type="button"
+              class="header__form-mobile-input header__form-mobile-input--btn"
+              value="Search"
+            />
+          </div>
+        </form>
         <div class="header__apps">
           <a class="header__apps-item" href="#"
             ><img src="/img/googleplay.svg"
