@@ -44,98 +44,119 @@
               alt="Triphouse logo"
             />
           </div>
-          <nav class="header__menu">
-            <ul class="header__menu-list">
-              <li class="header__menu-item header__menu-item--active">
-                <a class="header__menu-link" href="#">Stays</a>
-              </li>
-              <li class="header__menu-item header__menu-item--active">
-                <a class="header__menu-link" href="#">Attractions</a>
-              </li>
-              <li class="header__menu-item header__ico-theme">
-                <a class="header__menu-link" href="#"
-                  ><img class="img" src="img/theme.svg"
-                /></a>
-              </li>
-              <li class="header__menu-item header__ico-account">
-                <a class="header__menu-link" href="#"
-                  ><img class="img" src="img/account.svg"
-                /></a>
-              </li>
-            </ul>
-          </nav>
+          <ul class="header__menu-list">
+            <li class="header__menu-item header__menu-item--active">
+              <a class="header__menu-link" href="#">Stays</a>
+            </li>
+            <li class="header__menu-item header__menu-item--active">
+              <a class="header__menu-link" href="#">Attractions</a>
+            </li>
+            <li class="header__menu-item header__ico-theme">
+              <img class="img" src="img/theme.svg" />
+            </li>
+            <li class="header__menu-item header__ico-account">
+              <img class="img" src="img/account.svg" />
+            </li>
+          </ul>
         </header>
         <h2 class="header__title">
           Discover stays<br />to live, work or just relax
         </h2>
-        <div class="header__description">
-          <span class="header__description-text"
-            >Your destination or hotel name</span
-          >
-          <span class="header__description-text">Check-in — Check-out</span>
-        </div>
+
         <!-- For PC -->
-        <form class="header__form" action="/" method="GET">
-          <div class="header__form-wrap">
+        <form action="/" class="header__form form" method="get">
+          <div class="form__wrap form__wrap--city">
+            <span class="form__label form__label-dest"
+              >Your destination or hotel name</span
+            >
             <input
+              class="form__input"
               type="text"
-              class="header__form-input header__form-input--city"
               placeholder="New York"
+              name="city"
             />
           </div>
-          <div class="header__form-wrap">
+          <div class="form__wrap form__wrap--date">
+            <span class="form__label form__label-check"
+              >Check-in — Check-out</span
+            >
             <input
+              class="form__input"
               type="date"
-              class="header__form-input header__form-input--date"
+              name="date"
+              value="Tue 15 Sept — Sat 19 Sept"
             />
           </div>
-          <div class="header__form-wrap">
+          <div class="form__wrap form__wrap--quantity">
             <input
+              class="form__input"
               type="text"
-              class="header__form-input header__form-input--quantity"
               value="2 Adults — 0 Children — 1 Room"
+              name="quantity"
             />
           </div>
-          <div class="header__form-wrap">
-            <input
-              type="button"
-              class="header__form-input header__form-input--btn"
-              value="Search"
-            />
+          <div class="form__wrap form__wrap--b tn">
+            <button class="form__input form__input--btn" type="submit">
+              Search
+            </button>
           </div>
         </form>
         <!-- For mobile phones -->
-        <form class="header__form-mobile" action="/" method="GET">
-          <div class="header__form-mobile-wrap">
+        <form class="header__form-mobile form-mobile" action="/" method="GET">
+          <div class="form-mobile__wrap">
             <input
+              class="form-mobile__input"
               type="text"
-              class="header__form-mobile-input header__form-mobile-input--city"
+              name="city"
               placeholder="Your destination or hotel name"
             />
           </div>
-          <div class="header__form-mobile-wrap">
-            <input
-              type="date"
-              class="header__form-mobile-input header__form-mobile-input--date"
-            />
-            <input
-              type="date"
-              class="header__form-mobile-input header__form-mobile-input--date"
-            />
+          <div class="test">
+            <div class="form-mobile__wrap">
+              <span class="form-mobile__label">Check-in date</span>
+              <input class="form-mobile__input" type="date" name="date" />
+            </div>
+            <div class="form-mobile__wrap">
+              <span class="form-mobile__label">Check-out date</span>
+              <input class="form-mobile__input" type="date" name="date" />
+            </div>
           </div>
-          <div class="header__form-mobile-wrap">
-            <input
-              type="text"
-              class="header__form-mobile-input header__form-mobile-input--quantity"
-              value="2 Adults — 0 Children — 1 Room"
-            />
+          <div class="test">
+            <div class="form-mobile__wrap">
+              <span class="form-mobile__label">Adults</span>
+              <input
+                class="form-mobile__input"
+                type="text"
+                name="adults"
+                value="2"
+              />
+            </div>
+            <div class="form-mobile__wrap">
+              <span class="form-mobile__label">Children</span>
+              <input
+                class="form-mobile__input"
+                type="text"
+                name="children"
+                value="0"
+              />
+            </div>
+            <div class="form-mobile__wrap">
+              <span class="form-mobile__label">Rooms</span>
+              <input
+                class="form-mobile__input"
+                type="text"
+                name="rooms"
+                value="1"
+              />
+            </div>
           </div>
-          <div class="header__form-mobile-wrap">
-            <input
-              type="button"
-              class="header__form-mobile-input header__form-mobile-input--btn"
-              value="Search"
-            />
+          <div class="form-mobile__wrap">
+            <button
+              class="form-mobile__input form-mobile__input--search"
+              type="submit"
+            >
+              Search
+            </button>
           </div>
         </form>
         <div class="header__apps">

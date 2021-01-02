@@ -42,12 +42,18 @@ body {
 
 .header {
   background: url(../img/bg.png) top no-repeat;
+  background-size: cover;
 }
 
-.header__header,
-.header__menu-list {
+.header__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu-list,
+.header__menu-item {
+  display: flex;
   align-items: center;
 }
 
@@ -94,67 +100,78 @@ body {
   color: #fff;
 }
 
-.header__description {
-  margin-top: 100px;
+.header__form {
+  margin-top: 145px;
 }
 
-.header__description-text {
-  color: #ffffff;
+.form {
+  display: flex;
+}
+
+.form__label {
   font-size: 18px;
   line-height: 21px;
-  margin-right: 221px;
+  color: #fff;
 }
 
-.header__description-text:nth-last-child(1) {
-  margin-right: 0;
+.form__label-dest {
+  top: -50px;
+  left: 25px;
+  position: absolute;
 }
 
-.header__form {
-  margin-top: 24px;
-  display: flex;
+.form__label-check {
+  top: -50px;
+  left: 25px;
+  position: absolute;
+}
+
+.form__wrap--city {
+  position: relative;
+  width: 38%;
+}
+.form__wrap--date {
+  position: relative;
+  width: 21%;
+}
+.form__wrap--quantity {
+  width: 26%;
+}
+.form__wrap--btn {
+  width: 15%;
+}
+
+.form__wrap {
+  height: 64px;
+}
+
+.form__input {
+  padding-left: 24px;
+  font-size: 18px;
+  line-height: 21px;
+  border: 3px solid #f3f3f4;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+
+.form__input--btn {
+  color: #fff;
+  border: 0;
+  background: #3077c6;
+  padding-left: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.form__input:focus {
+  outline: 0;
+  border: 3px solid #f5bd41;
 }
 
 .header__form-mobile {
   display: none;
-}
-
-.header__form-input {
-  padding-left: 10px;
-  font-size: 18px;
-  line-height: 21px;
-  color: #383838;
-  height: 64px;
-  font-family: "Roboto", sans-serif;
-  background: #ffffff;
-  border: 3px solid #f3f3f4;
-  border-radius: 8px;
-}
-
-.header__form-input:focus {
-  outline: none;
-  border: 3px solid #f5bd41;
-}
-
-.header__form-input--city {
-  width: 470px;
-}
-
-.header__form-input--date {
-  width: 259px;
-}
-
-.header__form-input--quantity {
-  width: 280px;
-}
-
-.header__form-input--btn {
-  width: 192px;
-  background: #3077c6;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  color: #fff;
-  border: 0;
 }
 
 .header__apps {
@@ -414,8 +431,8 @@ body {
   }
 
   .header__ico-theme {
-    width: 16px;
-    height: 16px;
+    width: 22px;
+    height: 22px;
   }
 
   .header__ico-account {
@@ -438,43 +455,48 @@ body {
   }
 
   .header__form-mobile {
-    margin-top: 31px;
+    margin-top: 39px;
     display: block;
   }
 
-  .header__form-mobile-input {
-    font-weight: 500;
+  .test {
+    display: flex;
+  }
+
+  .form-mobile__wrap {
+    text-align: center;
+    width: 100%;
     height: 48px;
+    border: 4px solid #f5bd41;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-mobile__label {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .form-mobile__input {
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    border-radius: 4px;
-    background: #fff;
-    border: 4px solid #f5bd41;
-    font-family: "Roboto", sans-serif;
+    margin-bottom: -4px;
+    width: 100%;
+    height: 100%;
   }
 
-  .header__form-mobile-input--city {
-    background: #fff;
-    background: url(../img/input-search.svg) no-repeat left;
-    text-align: center;
-    width: 328px;
-  }
-
-  .header__form-mobile-input--date {
-    width: 162px;
-  }
-
-  .header__form-mobile-input--quantity {
-    width: 328px;
-  }
-
-  .header__form-mobile-input--btn {
-    width: 328px;
+  .form-mobile__input--search {
+    padding-top: 0;
     background: #3077c6;
+    border: 0;
+    font-weight: 500;
     font-size: 19px;
     line-height: 22px;
     color: #fff;
-    border: 0;
   }
 
   .header__apps {
