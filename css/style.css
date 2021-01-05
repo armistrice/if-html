@@ -127,19 +127,31 @@ body {
   position: absolute;
 }
 
+/* .header__form-mobile-input--adults {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.header__form-mobile-input--children {
+  border-radius: 0;
+}
+.header__form-mobile-input--rooms {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+} */
+
 .header__form-wrap--city {
   position: relative;
-  width: 38%;
+  width: 450px;
 }
 .header__form-wrap--date {
   position: relative;
-  width: 21%;
+  width: 259px;
 }
 .header__form-wrap--quantity {
-  width: 26%;
+  width: 322px;
 }
 .header__form-wrap--btn {
-  width: 15%;
+  width: 192px;
 }
 
 .header__form-wrap {
@@ -156,8 +168,27 @@ body {
   height: 100%;
 }
 
+.header__form-input--city {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.header__form-input--date {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+}
+.header__form-input--quantity {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+}
+
 .header__form-input--btn {
   border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
   color: #fff;
   border: 0;
   background: #3077c6;
@@ -366,11 +397,30 @@ body {
     border-radius: 6px;
   }
 
+  .header__form-input--city {
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .header__form-input--date {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+  }
+  .header__form-input--quantity {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+  }
+
   .header__form-input--btn {
     border: 0;
     padding-left: 0;
     font-size: 19px;
     line-height: 21px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .header__apps {
@@ -593,6 +643,18 @@ body {
   .header_form-mobile-children,
   .header_form-mobile-rooms {
     position: relative;
+  }
+
+  .header__form-mobile-input--adults {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .header__form-mobile-input--children {
+    border-radius: 0;
+  }
+  .header__form-mobile-input--rooms {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .header__form-mobile-label {
