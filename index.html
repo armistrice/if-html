@@ -3,9 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css" />
+    <title>Triphouse</title>
+    <!-- <link rel="stylesheet" href="css/reset.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/ico/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/ico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/ico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/ico/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/ico/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
 
   <body>
@@ -27,122 +52,263 @@
               <div class="sprite user"></div>
             </div>
           </div>
-        </div>
-        <h2 class="offers-h2">
-          Discover stays<br />
-          to live, work or just relax
+          <ul class="header__menu-list">
+            <li class="header__menu-item header__menu-item--active">
+              <a class="header__menu-link" href="#">Stays</a>
+            </li>
+            <li class="header__menu-item header__menu-item--active">
+              <a class="header__menu-link" href="#">Attractions</a>
+            </li>
+            <li class="header__menu-item header__ico-theme">
+              <img class="img" src="img/night.svg" />
+            </li>
+            <li class="header__menu-item header__ico-account">
+              <img class="img" src="img/account.svg" />
+            </li>
+            <li class="header__menu-item">
+              <div class="burger">
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+              </div>
+            </li>
+          </ul>
+        </header>
+        <h2 class="header__title">
+          Discover stays<br />to live, work or just relax
         </h2>
-        <div class="offers-forms">
-          <div class="offers-forms-label">
-            <span>Your destination or hotel name</span>
-            <span>Check-in — Check-out</span>
-          </div>
-          <form action="/" method="get">
+
+        <!-- For PC -->
+        <form action="/" class="header__form" method="get">
+          <div class="header__form-wrap header__form-wrap--city">
+            <span class="header__form-label header__form-label-dest"
+              >Your destination or hotel name</span
+            >
             <input
+              class="header__form-input header__form-input--city"
               type="text"
-              name="city"
-              id="city"
               placeholder="New York"
-              class="offers-forms-inputs city"
+              name="city"
             />
+          </div>
+          <div class="header__form-wrap header__form-wrap--date">
+            <span class="header__form-label header__form-label-check"
+              >Check-in — Check-out</span
+            >
             <input
+              class="header__form-input header__form-input--date"
               type="date"
               name="date"
-              id="date"
-              class="offers-forms-inputs date"
+              value="Tue 15 Sept — Sat 19 Sept"
             />
+          </div>
+          <div class="header__form-wrap header__form-wrap--quantity">
             <input
+              class="header__form-input header__form-input--quantity"
               type="text"
-              name="quantity"
-              id="quantity"
               value="2 Adults — 0 Children — 1 Room"
-              class="offers-forms-inputs quantity"
-              readonly
+              name="quantity"
             />
-            <input
+          </div>
+          <div class="header__form-wrap header__form-wrap--btn">
+            <button
+              class="header__form-input header__form-input--btn"
               type="submit"
-              value="Search"
-              class="offers-forms-submit search"
-            />
-          </form>
+            >
+              Search
+            </button>
+          </div>
+        </form>
+        <!-- For mobile phones -->
+        <div class="header__form-mobile">
+          <div class="header__form-mobile-city">
+            <div class="header__form-mobile-wrap">
+              <img
+                class="header__form-mobile-search-ico"
+                src="img/input-search.svg"
+                alt="Search image"
+              />
+              <input
+                type="text"
+                class="header__form-mobile-input header__form-mobile-input--city"
+                name="city"
+                placeholder="Your destination or hotel name"
+              />
+            </div>
+          </div>
+          <div class="header__form-mobile-wrap">
+            <div class="header_form-mobile-checkin">
+              <label class="header__form-mobile-label">Check-in date</label>
+              <input
+                type="date"
+                name="date"
+                class="header__form-mobile-input header__form-mobile-input--date"
+              />
+            </div>
+            <div class="header_form-mobile-checkout">
+              <label class="header__form-mobile-label">Check-out date</label>
+              <input
+                type="date"
+                name="date"
+                class="header__form-mobile-input header__form-mobile-input--date"
+              />
+            </div>
+          </div>
+          <div class="header__form-mobile-wrap">
+            <div class="header_form-mobile-adults">
+              <label class="header__form-mobile-label">Adults</label>
+              <input
+                type="text"
+                name="quantity-adults"
+                class="header__form-mobile-input header__form-mobile-input--adults"
+                value="2"
+              />
+            </div>
+            <div class="header_form-mobile-children">
+              <label class="header__form-mobile-label">Children</label>
+              <input
+                type="text"
+                name="quantity-children"
+                class="header__form-mobile-input header__form-mobile-input--children"
+                value="0"
+              />
+            </div>
+            <div class="header_form-mobile-rooms">
+              <label class="header__form-mobile-label">Rooms</label>
+              <input
+                type="text"
+                name="quantity-rooms"
+                class="header__form-mobile-input header__form-mobile-input--rooms"
+                value="1"
+              />
+            </div>
+          </div>
+          <div class="header__form-mobile-wrap">
+            <button
+              type="submit"
+              class="header__form-mobile-input header__form-mobile-input--btn"
+            >
+              Search
+            </button>
+          </div>
         </div>
-        <div class="offers-buttons">
-          <a href="/">
-            <div class="sprite gp"></div>
-          </a>
-          <a href="/">
-            <div class="sprite as"></div>
-          </a>
+        <div class="header__apps">
+          <a class="header__apps-item" href="#"
+            ><img src="img/googleplay.svg"
+          /></a>
+          <a class="header__apps_item" href="#"
+            ><img src="img/appstore.svg"
+          /></a>
         </div>
       </div>
     </section>
 
-    <section class="offers">
-      <div class="container padding-container">
-        <h2 class="offers-title text-center">What do we offer</h2>
-        <hr class="title-underline" />
-        <div class="offers-list">
-          <div class="item">
-            <div class="img-wrapper">
-              <img src="img/headphones.svg" alt="Support" />
+    <section class="offer">
+      <div class="container">
+        <h2 class="offer__title title title--active">What do we offer</h2>
+        <div class="advantages">
+          <div class="advantages__item">
+            <div class="advantages__img-wrapper">
+              <img
+                class="advantages__img img"
+                src="img/headphones.svg"
+                alt="Support"
+              />
             </div>
-            <span class="item-text">Support 24/7</span>
+            <p class="advantages__text">Support 24/7</p>
           </div>
-          <div class="item">
-            <div class="img-wrapper">
-              <img src="img/message.svg" alt="Communication" />
+          <div class="advantages__item">
+            <div class="advantages__img-wrapper">
+              <img
+                class="advantages__img img"
+                src="img/message.svg"
+                alt="Communicate"
+              />
             </div>
-            <span class="item-text">Communicate directly</span>
+            <p class="advantages__text">Communicate directly</p>
           </div>
-          <div class="item">
-            <div class="img-wrapper">
-              <img src="img/phone.svg" alt="Booking" />
+          <div class="advantages__item">
+            <div class="advantages__img-wrapper">
+              <img
+                class="advantages__img img"
+                src="img/phone.svg"
+                alt="Booking"
+              />
             </div>
-            <span class="item-text">Book online</span>
+            <p class="advantages__text">Book online</p>
           </div>
-          <div class="item">
-            <div class="img-wrapper">
-              <img src="img/reviews.svg" alt="Reviews" />
+          <div class="advantages__item">
+            <div class="advantages__img-wrapper">
+              <img
+                class="advantages__img img"
+                src="img/reviews.svg"
+                alt="Reviews"
+              />
             </div>
-            <span class="item-text">Real guest reviews</span>
+            <p class="advantages__text">Real guest reviews</p>
           </div>
         </div>
       </div>
     </section>
 
     <section class="footer">
-      <div class="container padding-container">
-        <div class="footer-top">
-          <div class="footer-top-block">
-            <ul>
-              <li class="fli">About</li>
-              <li><a href="/" class="links">How Triphouse works</a></li>
-              <li><a href="/" class="links">Careers</a></li>
-              <li><a href="/" class="links">Privacy</a></li>
-              <li><a href="/" class="links">Terms</a></li>
-            </ul>
-          </div>
-          <div class="footer-top-block">
-            <ul>
-              <li class="fli">Property types</li>
-              <li><a href="/" class="links">Guests houses</a></li>
-              <li><a href="/" class="links">Hotels</a></li>
-              <li><a href="/" class="links">Apartments</a></li>
-              <li><a href="/" class="links">Villas</a></li>
-              <li><a href="/" class="links">Holiday homes</a></li>
-              <li><a href="/" class="links">Hostels</a></li>
-            </ul>
-          </div>
-          <div class="footer-top-block">
-            <ul>
-              <li class="fli">Support</li>
-              <li><a href="/" class="links">Contact Customer Services</a></li>
-              <li><a href="/" class="links">FAQ</a></li>
-            </ul>
-          </div>
+      <div class="container">
+        <div class="footer__logo">
+          <img src="img/logo_white.svg" alt="" />
         </div>
-        <div class="footer-bottom">
-          <p>2020 Triphouse. All rights reserved</p>
+        <nav class="footer__navigation nav">
+          <ul class="nav__list">
+            <li class="nav__list-item nav__list-item--title">
+              <a class="nav__link" href="#">About</a>
+            </li>
+            <li class="nav__list-item nav__list-item--body">
+              <a class="nav__link" href="#">How Triphouse works</a>
+            </li>
+            <li class="nav__list-item nav__list-item--body">
+              <a class="nav__link" href="#">Careers</a>
+            </li>
+            <li class="nav__list-item nav__list-item--body"></li>
+            <li class="nav__list-item nav__list-item--body">
+              <a class="nav__link" href="#">Terms</a>
+            </li>
+          </ul>
+          <ul class="nav__list">
+            <li class="nav__list-item nav__list-item--title">
+              <a href="#" class="nav__link">Property types</a>
+            </li>
+            <li class="nav__list-item nav__list-item--body">
+              <a class="nav__link" href="#">Guest houses</a>
+            </li>
+            <li class="nav__list-item nav__list-item--body">
+              <a class="nav__link" href="#">Hotels</a>
+            </li>
+            <li class="nav__list-item nav__list-item--body">
+              <a class="nav__link" href="#">Apartments</a>
+            </li>
+            <li class="nav__list-item nav__list-item--body">
+              <a class="nav__link" href="#">Villas</a>
+            </li>
+            <li class="nav__list-item nav__list-item--body">
+              <a class="nav__link" href="#">Holiday homes</a>
+            </li>
+            <li class="nav__list-item nav__list-item--body">
+              <a class="nav__link" href="#">Hostels</a>
+            </li>
+          </ul>
+          <ul class="nav__list">
+            <li class="nav__list-item nav__list-item--title">
+              <a href="#" class="nav__link">Support</a>
+            </li>
+            <li class="nav__list-item nav__list-item--body">
+              <a class="nav__link" href="#">Contact Customer Service</a>
+            </li>
+            <li class="nav__list-item nav__list-item--body">
+              <a class="nav__link" href="#">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="copyright">
+          &copy; 2020 Triphouse, Inc. All rights reserved
         </div>
       </div>
     </section>
