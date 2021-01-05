@@ -108,6 +108,7 @@ body {
   display: flex;
   background: #fff;
   margin-top: 145px;
+  border-radius: 8px;
 }
 
 .header__form-label {
@@ -175,8 +176,6 @@ body {
 
 .header__form-input--btn {
   border: none;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
   color: #fff;
   border: 0;
   background: #3077c6;
