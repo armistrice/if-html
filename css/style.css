@@ -45,7 +45,7 @@ body {
   background-size: cover;
 }
 
-.header__header {
+.header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,7 +68,7 @@ body {
 }
 
 .header__menu-item:nth-child(2) {
-  margin-right: 24px;
+  margin-right: 48px;
 }
 
 .header__menu-item:nth-last-child(1) {
@@ -92,6 +92,10 @@ body {
   color: #fff;
 }
 
+.burger {
+  display: none;
+}
+
 .header__title {
   margin-top: 202px;
   font-weight: 500;
@@ -101,51 +105,48 @@ body {
 }
 
 .header__form {
+  display: flex;
   margin-top: 145px;
 }
 
-.form {
-  display: flex;
-}
-
-.form__label {
+.header__form-label {
   font-size: 18px;
   line-height: 21px;
   color: #fff;
 }
 
-.form__label-dest {
+.header__form-label-dest {
   top: -50px;
   left: 25px;
   position: absolute;
 }
 
-.form__label-check {
+.header__form-label-check {
   top: -50px;
   left: 25px;
   position: absolute;
 }
 
-.form__wrap--city {
+.header__form-wrap--city {
   position: relative;
   width: 38%;
 }
-.form__wrap--date {
+.header__form-wrap--date {
   position: relative;
   width: 21%;
 }
-.form__wrap--quantity {
+.header__form-wrap--quantity {
   width: 26%;
 }
-.form__wrap--btn {
+.header__form-wrap--btn {
   width: 15%;
 }
 
-.form__wrap {
+.header__form-wrap {
   height: 64px;
 }
 
-.form__input {
+.header__form-input {
   padding-left: 24px;
   font-size: 18px;
   line-height: 21px;
@@ -155,7 +156,8 @@ body {
   height: 100%;
 }
 
-.form__input--btn {
+.header__form-input--btn {
+  border: none;
   color: #fff;
   border: 0;
   background: #3077c6;
@@ -165,7 +167,7 @@ body {
   line-height: 28px;
 }
 
-.form__input:focus {
+.header__form-input:focus {
   outline: 0;
   border: 3px solid #f5bd41;
 }
@@ -256,7 +258,7 @@ body {
   background: #10367c;
 }
 
-.logo {
+.footer__logo {
   display: none;
 }
 
@@ -306,6 +308,73 @@ body {
   .container {
     max-width: 780px;
     padding: 50px 16px 50px 16px;
+  }
+
+  .header__logo-img {
+    width: 150px;
+    height: 30px;
+  }
+
+  .header__menu-item {
+    margin-right: 12px;
+  }
+
+  .header__menu-item:nth-child(2) {
+    margin-right: 24px;
+  }
+
+  .header__menu-link {
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+  }
+
+  .header__title {
+    margin-top: 120px;
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .header__form {
+    margin-top: 100px;
+  }
+
+  .header__form-label {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .header__form-label-dest {
+    top: -45px;
+    left: 18px;
+  }
+
+  .header__form-label-check {
+    top: -45px;
+    left: 18px;
+  }
+
+  .header__form-wrap {
+    height: 54px;
+  }
+
+  .header__form-input {
+    padding-left: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    border: 2px solid #f3f3f4;
+    border-radius: 6px;
+  }
+
+  .header__form-input--btn {
+    border: 0;
+    padding-left: 0;
+    font-size: 19px;
+    line-height: 21px;
+  }
+
+  .header__apps {
+    margin-top: 60px;
   }
 
   .offer__title {
@@ -359,7 +428,7 @@ body {
     line-height: 24px;
   }
 
-  .logo {
+  .footer__logo {
     display: none;
   }
 
@@ -372,7 +441,7 @@ body {
   }
 
   .nav__list {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .nav__list-item {
@@ -440,8 +509,23 @@ body {
     height: 24px;
   }
 
+  .burger {
+    display: block;
+  }
+
+  .burger__line {
+    width: 24px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 4px;
+  }
+
+  .burger__line:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
   .header__title {
-    margin-top: 52px;
+    margin: 52px 0 31px 0;
     font-size: 30px;
     line-height: 35px;
   }
@@ -455,48 +539,80 @@ body {
   }
 
   .header__form-mobile {
-    margin-top: 39px;
     display: block;
+    background: #f5bd41;
+    border: 8px solid #f5bd41;
   }
 
-  .test {
+  .header__form-mobile-wrap {
+    margin-bottom: 8px;
     display: flex;
   }
 
-  .form-mobile__wrap {
-    text-align: center;
-    width: 100%;
-    height: 48px;
-    border: 4px solid #f5bd41;
-    background: #ffffff;
-    display: flex;
-    flex-direction: column;
+  .header__form-mobile-city {
+    position: relative;
+    margin-bottom: 8px;
   }
 
-  .form-mobile__label {
-    font-size: 12px;
-    line-height: 14px;
+  .header__form-mobile-search-ico {
+    position: absolute;
+    top: 16px;
+    left: 10px;
   }
 
-  .form-mobile__input {
-    text-align: center;
-    border-radius: 4px;
+  .header__form-mobile-wrap:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  .header__form-mobile-input {
+    font-family: Roboto;
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    margin-bottom: -4px;
+    border-radius: 4px;
+    padding: 24px 0 6px 8px;
+    height: 48px;
     width: 100%;
-    height: 100%;
   }
 
-  .form-mobile__input--search {
-    padding-top: 0;
-    background: #3077c6;
-    border: 0;
-    font-weight: 500;
+  .header__form-mobile-input--city {
+    padding: 15px 0 15px 36px;
+  }
+
+  .header_form-mobile-checkin,
+  .header_form-mobile-checkout {
+    width: 50%;
+    position: relative;
+  }
+
+  .header_form-mobile-checkin {
+    margin-right: 8px;
+  }
+
+  .header_form-mobile-adults,
+  .header_form-mobile-children,
+  .header_form-mobile-rooms {
+    position: relative;
+  }
+
+  .header__form-mobile-label {
+    font-size: 12px;
+    top: 7px;
+    left: 9px;
+    position: absolute;
+  }
+
+  .header__form-mobile-input--date:nth-last-child(1) {
+    margin-right: 0;
+  }
+
+  .header__form-mobile-input--btn {
     font-size: 19px;
     line-height: 22px;
-    color: #fff;
+    color: #ffffff;
+    background-color: #3077c6;
+    padding: 0;
+    text-align: center;
   }
 
   .header__apps {
@@ -511,6 +627,10 @@ body {
   .offer__title {
     margin-top: 12px;
     margin-bottom: 32px;
+  }
+
+  .title--active::after {
+    display: none;
   }
 
   .advantages {
@@ -542,7 +662,8 @@ body {
     line-height: 18px;
   }
 
-  .logo {
+  .footer__logo {
+    margin-top: 28px;
     display: block;
     text-align: center;
   }
@@ -554,6 +675,10 @@ body {
   .nav {
     display: flex;
     align-items: center;
+  }
+
+  .nav__list {
+    margin-bottom: 0;
   }
 
   .nav__list-item--title {
@@ -578,64 +703,3 @@ body {
     line-height: 14px;
   }
 }
-/* For tablets */
-
-/* .sprite {
-  position: absolute;
-  visibility: hidden;
-  height: 0;
-  width: 0;
-}
-
-.blueicon-sprite {
-  fill: #3077c6;
-}
-
-.whiteicon-sprite {
-  fill: #fff;
-}
-
-.headphones {
-  width: 75px;
-  height: 91.67px;
-}
-
-.message {
-  width: 83.33px;
-  height: 83.33px;
-}
-
-.phone {
-  width: 100px;
-  height: 66.67px;
-}
-
-.reviews {
-  width: 91.67px;
-  height: 83.33px;
-}
-
-.logo {
-  width: 205px;
-  height: 50px;
-}
-
-.theme {
-  width: 38px;
-  height: 38px;
-}
-
-.account {
-  width: 40px;
-  height: 40px;
-}
-
-.googleplay {
-  width: 135px;
-  height: 40px;
-}
-
-.appstore {
-  width: 120px;
-  height: 40px;
-} */
