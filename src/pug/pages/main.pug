@@ -1,0 +1,83 @@
+- var images = "../src/assets/images/"
+main
+  section.offer
+    .container
+      h2.offer__title.title.title--active What do we offer
+      .advantages
+        .advantages__item.col-m-12.col-s-6
+          .advantages__img-wrapper
+            img.advantages__img.img(src=images + "headphones.svg" alt="Support")
+          p.advantages__text Support 24/7
+        .advantages__item.col-m-12.col-s-6
+          .advantages__img-wrapper
+            img.advantages__img.img(src=images + "message.svg" alt="Communicate")
+          p.advantages__text Communicate directly
+        .advantages__item.col-m-12.col-s-6
+          .advantages__img-wrapper
+            img.advantages__img.img(src=images + "phone.svg" alt="Booking")
+          p.advantages__text Book online
+        .advantages__item.col-m-12.col-s-6
+          .advantages__img-wrapper
+            img.advantages__img.img(src=images + "reviews.svg" alt="Reviews")
+          p.advantages__text Real guest reviews
+    section.homes
+      .container
+        h2.homes__title.title Homes guests loves
+        .places
+          .places__item.col-s-6.col-m-6
+            .places__img-wrapper
+              img.img(src=images + "hotel-leopold.jpg" alt="Hotel Leopold")
+            a.places__link(href="#") Hotel Leopold
+            p.places__text Saints Petersburg, Russia
+          .places__item.col-s-6.col-m-6
+            .places__img-wrapper
+              img.img(src=images + "apartment-sunshine.jpg" alt="Apartment Sunshine")
+            a.places__link(href="#") Apartment Sunshine
+            p.places__text Santa Cruz de Tenerife, Spain
+          .places__item.col-s-6.col-m-6
+            .places__img-wrapper
+              img.img(src=images + "villa-kunerad.jpg" alt="Villa Kunerad")
+            a.places__link(href="#") Villa Kunerad
+            p.places__text Vysokie Tatry, Slowakia
+          .places__item.col-s-6.col-m-6
+            .places__img-wrapper
+              .arrow
+                a(href="#")
+                  img(src=images + "arrow.svg" alt="Arrow")
+              img.img(src=images + "hostel-friendship.jpg" alt="Hostel Friendship")
+            a.places__link(href="#") Hostel Friendship
+            p.places__text Berlin, Germany
+    section.dest
+      .container
+        h2.dest__title.title
+        .dest__tab
+          button.dest__btn Regions
+          button.dest__btn Cities
+          button.dest__btn Places of interest
+        .region
+          .region__item
+            .region-img-wrapper
+               img.img(src="/" alt="Maldives")
+            p.region__link Maldives
+          .region__item
+            .region-img-wrapper
+               img.img(src="/" alt="Spain")
+            p.region__link Spain
+          .region__item
+            .region-img-wrapper
+               img.img(src="/" alt="Norway")
+            p.region__link Norway
+          .region__item
+            .region-img-wrapper
+               img.img(src="/" alt="Island")
+            p.region__link Island
+        a(href="#")
+          img(src=images + "arrow.svg" alt="Arrow")
+    section.signup
+      .container
+        .signup__img
+          .signup__img-wrapper
+            img.img(src="/" alt="User")
+        p.signup__text Sign up and get 20% off your first booking
+        button.signup__btn Sign up
+        

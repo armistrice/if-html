@@ -1,0 +1,15 @@
+$font-path: "../assets/fonts";
+
+@font-face {
+  font-family: "Roboto";
+  src: url("#{$font-path}/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("#{$font-path}/Roboto-Medium.woff2") format("woff2");
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+}
