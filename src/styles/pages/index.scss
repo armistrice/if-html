@@ -47,15 +47,20 @@
     margin-right: 0;
   }
 
-  &__menu-item--active:hover::after {
+  &__menu-item--active::after {
     position: absolute;
     content: " ";
-    width: 100%;
+    width: 0%;
     height: 4px;
     background: #f5bd41;
     top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  &__menu-item--active:hover::after {
+    width: 100%;
+    transition: width 0.2s;
   }
 
   &__ico-theme {
@@ -159,6 +164,7 @@
   }
 
   &__form-input--btn {
+    cursor: pointer;
     border: none;
     color: #fff;
     border: 0;
@@ -285,13 +291,163 @@
     line-height: 28px;
     color: #bfbfbf;
   }
+
+  &__arrow-wrap {
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &__arrow {
+    background: url(#{$img-path}arrow.svg) no-repeat center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
-.arrow {
-  position: absolute;
-  left: 100%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.dest {
+  background: #fff;
+
+  &__title {
+    margin-top: 70px;
+    margin-bottom: 104px;
+  }
+
+  &__tab {
+    margin-bottom: 66px;
+  }
+
+  &__btn {
+    font-size: 24px;
+    line-height: 28px;
+    height: 64px;
+    background: #f3f3f4;
+    border-radius: 8px;
+  }
+
+  &__btn--active {
+    color: #fff;
+    background: #3077c6;
+  }
+
+  &__btn--regions {
+    width: 20%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &__btn--cities {
+    width: 20%;
+    border-radius: 0;
+  }
+
+  &__btn--places {
+    width: 30%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.region {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__img-wrapper {
+    margin-bottom: 25px;
+    position: relative;
+  }
+
+  &__btn {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__img-wrapper:hover &__btn {
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+
+  &__link {
+    font-size: 24px;
+    line-height: 28px;
+    color: #3077c6;
+  }
+
+  &__arrow-wrap {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 48px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &__arrow {
+    background: url(#{$img-path}arrow.svg) no-repeat center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.btn {
+  width: 128px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #3077c6;
+  color: #3077c6;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.signup {
+  background: #fff;
+
+  &__wrap {
+    position: relative;
+    padding: 57px 0 57px 24px;
+    background: #eaf0f9;
+    display: flex;
+  }
+
+  &__close {
+    background: url(#{$img-path}close.svg) no-repeat center;
+    position: absolute;
+    top: 10%;
+    left: 95%;
+    width: 26px;
+    height: 26px;
+  }
+
+  &__img {
+    margin-right: 24px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 21px;
+  }
 }
 
 .footer {
@@ -462,28 +618,40 @@
       padding: 15px 0 15px 36px;
     }
 
-    &_form-mobile-checkin,
-    &_form-mobile-checkout {
+    &__form-mobile-checkin,
+    &__form-mobile-checkout {
       position: relative;
     }
 
-    &_form-mobile-checkin {
+    &__form-mobile-checkin {
       margin-right: 8px;
     }
 
-    &_form-mobile-adults,
-    &_form-mobile-children,
-    &_form-mobile-rooms {
+    &__form-mobile-adults,
+    &__form-mobile-children,
+    &__form-mobile-rooms {
       position: relative;
+    }
+
+    &__line::after {
+      content: " ";
+      position: absolute;
+      left: 99%;
+      top: 20%;
+      height: 32px;
+      width: 2px;
+      background: #bfbfbf;
     }
 
     &__form-mobile-input--adults {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
+
     &__form-mobile-input--children {
       border-radius: 0;
     }
+
     &__form-mobile-input--rooms {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
@@ -514,11 +682,14 @@
     }
   }
 
-  .offer__title {
-    position: relative;
-    margin: 0 0 52px 0;
-  }
+  .offer {
+    background: #fff;
 
+    &__title {
+      position: relative;
+      margin: 0 0 52px 0;
+    }
+  }
   .title {
     font-size: 28px;
     line-height: 32px;
@@ -571,6 +742,31 @@
     &__text {
       font-size: 20px;
       line-height: 24px;
+    }
+  }
+
+  .homes__title {
+    margin: 0 0 32px 0;
+  }
+
+  .places {
+    &__item {
+      width: 200px;
+    }
+
+    &__img-wrapper {
+      margin-bottom: 16px;
+    }
+
+    &__link {
+      font-size: 14px;
+      line-height: 16x;
+    }
+
+    &__text {
+      margin-top: 8px;
+      font-size: 14px;
+      line-height: 16px;
     }
   }
 
@@ -769,6 +965,31 @@
     &__text {
       font-size: 15px;
       line-height: 18px;
+    }
+  }
+
+  .homes__title {
+    margin: 28px 0 32px 0;
+  }
+
+  .places {
+    &__item {
+      width: 155px;
+    }
+
+    &__img-wrapper {
+      margin-bottom: 8px;
+    }
+
+    &__link {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &__text {
+      margin-top: 4px;
+      font-size: 12px;
+      line-height: 14px;
     }
   }
 

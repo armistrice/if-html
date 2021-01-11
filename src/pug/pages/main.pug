@@ -6,7 +6,7 @@ main
       .advantages
         .advantages__item.col-m-12.col-s-6
           .advantages__img-wrapper
-            img.advantages__img.img(src=images + "headphones.svg" alt="Support")
+             img.advantages__img.img(src=images + "headphones.svg" alt="Support")
           p.advantages__text Support 24/7
         .advantages__item.col-m-12.col-s-6
           .advantages__img-wrapper
@@ -41,43 +41,49 @@ main
             p.places__text Vysokie Tatry, Slowakia
           .places__item.col-s-6.col-m-6
             .places__img-wrapper
-              .arrow
-                a(href="#")
-                  img(src=images + "arrow.svg" alt="Arrow")
+              .places__arrow-wrap
+                button.places__arrow
               img.img(src=images + "hostel-friendship.jpg" alt="Hostel Friendship")
             a.places__link(href="#") Hostel Friendship
             p.places__text Berlin, Germany
     section.dest
       .container
-        h2.dest__title.title
+        h2.dest__title.title The best destinations
         .dest__tab
-          button.dest__btn Regions
-          button.dest__btn Cities
-          button.dest__btn Places of interest
+          button.dest__btn.dest__btn--regions.dest__btn--active Regions
+          button.dest__btn.dest__btn--cities Cities
+          button.dest__btn.dest__btn--places Places of interest
         .region
           .region__item
-            .region-img-wrapper
-               img.img(src="/" alt="Maldives")
-            p.region__link Maldives
+            .region__img-wrapper
+               button.btn.region__btn Book now
+               img.img(src=images + "maldives.jpg" alt="Maldives")
+            a.region__link(href="#") Maldives
           .region__item
-            .region-img-wrapper
-               img.img(src="/" alt="Spain")
-            p.region__link Spain
+            .region__img-wrapper
+               button.btn.region__btn Book now
+               img.img(src=images + "spain.jpg" alt="Spain")
+            a.region__link(href="#") Spain
           .region__item
-            .region-img-wrapper
-               img.img(src="/" alt="Norway")
-            p.region__link Norway
+            .region__img-wrapper
+               button.btn.region__btn Book now
+               img.img(src=images + "norway.jpg" alt="Norway")
+            a.region__link(href="#") Norway
           .region__item
-            .region-img-wrapper
-               img.img(src="/" alt="Island")
-            p.region__link Island
-        a(href="#")
-          img(src=images + "arrow.svg" alt="Arrow")
+            .region__img-wrapper
+               button.btn.region__btn Book now
+               img.img(src=images + "island.jpg" alt="Island")
+            a.region__link(href="#") Island
+        .region__arrow-wrap
+          button.region__arrow
     section.signup
       .container
-        .signup__img
-          .signup__img-wrapper
-            img.img(src="/" alt="User")
-        p.signup__text Sign up and get 20% off your first booking
-        button.signup__btn Sign up
+        .signup__wrap
+          button.signup__close
+          .signup__img
+            .signup__img-wrapper
+              img.img(src=images + "user.svg" alt="User")
+          .signup__content
+            p.signup__text Sign up and get 20% off your first booking
+            button.btn Sign up
         

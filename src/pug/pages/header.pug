@@ -3,6 +3,7 @@ section.header
     .container
         header.header__top
             .header__logo
+              a(href="#")
                 img.header__logo-img.img(src=images + "logo.svg" alt="Triphouse logo")
             ul.header__menu-list
                 li.header__menu-item.header__menu-item--active
@@ -23,7 +24,7 @@ section.header
         form.header__form(action="/" method="get")
           .header__form-wrap.header__form-wrap--city
             label.header__form-label.header__form-label-dest Your destination or hotel name
-            input.header__form-input.header__form-input--city(type="text" placeholder="New York" name="city")
+            input.header__form-input.header__form-input--city(type="text" name="city")
           .header__form-wrap.header__form-wrap--date
             label.header__form-label.header__form-label-check Check-in — Check-out
             input.header__form-input.header__form-input--date(type="date" name="date")
@@ -31,29 +32,29 @@ section.header
             input.header__form-input.header__form-input--quantity(type="text" value="2 Adults — 0 Children — 1 Room" name="quantity")
           .header__form-wrap.header__form-wrap--btn
             button.header__form-input.header__form-input--btn(type="submit") Search
-        //- For mobile phones
-        .header__form-mobile
+          //- For mobile phones
+        form.header__form-mobile(action="/" method="get")
           .header__form-mobile-city
             .header__form-mobile-wrap
-              img.header__form-mobile-search-ico(src="img/input-search.svg" alt="Search")
-              input.header__form-mobile-input.header__form-mobile-input--city(name="city", placeholder="Your destination or hotel name")
+              img.header__form-mobile-search-ico(src=images + "input-search.svg" alt="Search")
+              input.header__form-mobile-input.header__form-mobile-input--city(type="text" name="city" placeholder="Your destination or hotel name")
             .header__form-mobile-wrap
               .header__form-mobile-checkin.col-s-6.col-m-6
                 label.header__form-mobile-label Check-in
-                input.header__form-mobile-input.header__form-mobile-input--date(type="date", name="date")
-              .header__form-mobile-checkin.col-s-6.col-m-6
+                input.header__form-mobile-input.header__form-mobile-input--date(type="date" name="date")
+              .header__form-mobile-checkout.col-s-6.col-m-6
                 label.header__form-mobile-label Check-out
-                input.header__form-mobile-input.header__form-mobile-input--date(type="date", name="date")
+                input.header__form-mobile-input.header__form-mobile-input--date(type="date" name="date")
             .header__form-mobile-wrap
-              .header__form-mobile-adults.col-s-4.col-m-4
+              .header__form-mobile-adults.header__line.col-s-4.col-m-4
                 label.header__form-mobile-label Adults
-                input.header__form-mobile-input.header__form-mobile-input--adults(type="text", name="quantity-adults" value="2")
-              .header__form-mobile-children.col-s-4.col-m-4
+                input.header__form-mobile-input.header__form-mobile-input--adults(type="text" name="quantity-adults" value="2")
+              .header__form-mobile-children.header__line.col-s-4.col-m-4
                 label.header__form-mobile-label Children
-                input.header__form-mobile-input.header__form-mobile-input--children(type="text", name="quantity-children" value="0")
+                input.header__form-mobile-input.header__form-mobile-input--children(type="text" name="quantity-children" value="0")
               .header__form-mobile-rooms.col-s-4.col-m-4
                 label.header__form-mobile-label Rooms
-                input.header__form-mobile-input.header__form-mobile-input--rooms(type="text", name="quantity-rooms" value="1")
+                input.header__form-mobile-input.header__form-mobile-input--rooms(type="text" name="quantity-rooms" value="1")
             .header__form-mobile-wrap
               button.header__form-mobile-input.header__form-mobile-input--btn(type="submit") Search
         .header__apps
