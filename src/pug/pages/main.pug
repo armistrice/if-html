@@ -25,26 +25,30 @@ main
         h2.homes__title.title Homes guests loves
         .places
           .places__item.col-s-6.col-m-6
-            .places__img-wrapper
-              img.img(src=images + "hotel-leopold.jpg" alt="Hotel Leopold")
-            a.places__link(href="#") Hotel Leopold
+            a(href="#")
+              .places__img-wrapper
+                img.img(src=images + "hotel-leopold.jpg" alt="Hotel Leopold")
+            a.img-text(href="#") Hotel Leopold
             p.places__text Saints Petersburg, Russia
           .places__item.col-s-6.col-m-6
-            .places__img-wrapper
-              img.img(src=images + "apartment-sunshine.jpg" alt="Apartment Sunshine")
-            a.places__link(href="#") Apartment Sunshine
+            a(href="#")
+              .places__img-wrapper
+                img.img(src=images + "apartment-sunshine.jpg" alt="Apartment Sunshine")
+            a.img-text(href="#") Apartment Sunshine
             p.places__text Santa Cruz de Tenerife, Spain
           .places__item.col-s-6.col-m-6
-            .places__img-wrapper
-              img.img(src=images + "villa-kunerad.jpg" alt="Villa Kunerad")
-            a.places__link(href="#") Villa Kunerad
+            a(href="#")
+              .places__img-wrapper
+                img.img(src=images + "villa-kunerad.jpg" alt="Villa Kunerad")
+            a.img-text(href="#") Villa Kunerad
             p.places__text Vysokie Tatry, Slowakia
           .places__item.col-s-6.col-m-6
             .places__img-wrapper
               .places__arrow-wrap
                 button.places__arrow
-              img.img(src=images + "hostel-friendship.jpg" alt="Hostel Friendship")
-            a.places__link(href="#") Hostel Friendship
+              a(href="#")
+               img.img(src=images + "hostel-friendship.jpg" alt="Hostel Friendship")
+            a.img-text(href="#") Hostel Friendship
             p.places__text Berlin, Germany
     section.dest
       .container
@@ -52,30 +56,31 @@ main
         .dest__tab
           button.dest__btn.dest__btn--regions.dest__btn--active Regions
           button.dest__btn.dest__btn--cities Cities
-          button.dest__btn.dest__btn--places Places of interest
+          button.dest__btn.dest__btn--placesfull Places of interest
+          button.dest__btn.dest__btn--places Places
         .region
           .region__item
             .region__img-wrapper
-               button.btn.region__btn Book now
+               a.btn.region__btn(href="#") Book now
                img.img(src=images + "maldives.jpg" alt="Maldives")
-            a.region__link(href="#") Maldives
+            a.img-text(href="#") Maldives
           .region__item
             .region__img-wrapper
-               button.btn.region__btn Book now
+               a.btn.region__btn(href="#") Book now
                img.img(src=images + "spain.jpg" alt="Spain")
-            a.region__link(href="#") Spain
+            a.img-text(href="#") Spain
           .region__item
             .region__img-wrapper
-               button.btn.region__btn Book now
+               a.btn.region__btn(href="#") Book now
                img.img(src=images + "norway.jpg" alt="Norway")
-            a.region__link(href="#") Norway
+            a.img-text(href="#") Norway
           .region__item
             .region__img-wrapper
-               button.btn.region__btn Book now
+               a.btn.region__btn(href="#") Book now
                img.img(src=images + "island.jpg" alt="Island")
-            a.region__link(href="#") Island
-        .region__arrow-wrap
-          button.region__arrow
+            a.img-text(href="#") Island
+          .region__arrow-wrap
+            button.region__arrow
     section.signup
       .container
         .signup__wrap
@@ -85,5 +90,5 @@ main
               img.img(src=images + "user.svg" alt="User")
           .signup__content
             p.signup__text Sign up and get 20% off your first booking
-            button.btn Sign up
+            a.btn(href="#") Sign up
         
