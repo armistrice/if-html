@@ -1,0 +1,32 @@
+- var images = "../src/assets/images/"
+section.dest
+  .container
+    h2.dest__title.title The best destinations
+    .dest__tab
+      button.dest__btn.dest__btn--regions.dest__btn--active Regions
+      button.dest__btn.dest__btn--cities Cities
+      button.dest__btn.dest__btn--placesfull Places of interest
+      button.dest__btn.dest__btn--places Places
+    .region
+      .region__item
+        .region__img-wrapper
+            a.btn.region__btn(href="#") Book now
+            img.img(src=images + "maldives.jpg" alt="Maldives")
+        a.img-text(href="#") Maldives
+      .region__item
+        .region__img-wrapper
+            a.btn.region__btn(href="#") Book now
+            img.img(src=images + "spain.jpg" alt="Spain")
+        a.img-text(href="#") Spain
+      .region__item
+        .region__img-wrapper
+            a.btn.region__btn(href="#") Book now
+            img.img(src=images + "norway.jpg" alt="Norway")
+        a.img-text(href="#") Norway
+      .region__item
+        .region__img-wrapper
+            a.btn.region__btn(href="#") Book now
+            img.img(src=images + "island.jpg" alt="Island")
+        a.img-text(href="#") Island
+      .region__arrow-wrap
+        button.region__arrow

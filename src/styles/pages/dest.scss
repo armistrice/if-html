@@ -1,0 +1,216 @@
+.dest {
+  background: #fff;
+
+  &__title {
+    margin-top: 70px;
+    margin-bottom: 104px;
+  }
+
+  &__tab {
+    display: flex;
+    margin-bottom: 66px;
+  }
+
+  &__btn {
+    font-size: 24px;
+    line-height: 28px;
+    height: 64px;
+    background: #f3f3f4;
+    border-radius: 8px;
+  }
+
+  &__btn--active {
+    color: #fff;
+    background: #3077c6;
+  }
+
+  &__btn--regions {
+    width: 20%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &__btn--cities {
+    width: 20%;
+    border-radius: 0;
+  }
+
+  &__btn--placesfull {
+    width: 30%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  &__btn--places {
+    display: none;
+  }
+
+  .region {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__img-wrapper {
+      width: 296px;
+      height: 296px;
+      margin-bottom: 25px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(56, 56, 56, 0.4);
+        box-shadow: inset 0px 4px 70px rgba(56, 56, 56, 0.5);
+        opacity: 0;
+      }
+
+      &:hover:after {
+        opacity: 1;
+        transition: opacity 0.2s;
+      }
+    }
+
+    &__btn {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__img-wrapper:hover .region__btn {
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+
+    &__arrow-wrap {
+      position: absolute;
+      background: #fff;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      transform-origin: center center;
+      left: 50%;
+      top: 120%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__arrow {
+      background: url(#{$img-path}arrow.svg) no-repeat center;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 3px;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dest {
+    &__title {
+      margin: 0 0 32px 0;
+    }
+
+    &__tab {
+      margin-bottom: 32px;
+      justify-content: space-between;
+    }
+
+    &__btn {
+      font-size: 22px;
+      line-height: 24px;
+      border-radius: 6px;
+      height: 48px;
+    }
+
+    &__btn--regions {
+      width: 30%;
+    }
+
+    &__btn--cities {
+      width: 30%;
+    }
+
+    &__btn--placesfull {
+      display: none;
+    }
+
+    &__btn--places {
+      width: 30%;
+      display: block;
+    }
+
+    .region {
+      &__img-wrapper {
+        width: 184px;
+        height: 184px;
+        margin-bottom: 16px;
+        &:hover:after {
+          display: none;
+        }
+      }
+
+      &__img-wrapper:hover .region__btn {
+        display: none;
+      }
+
+      &__arrow-wrap {
+        top: 110%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .dest {
+    &__title {
+      margin-top: 28px;
+      margin-bottom: 32px;
+    }
+
+    &__tab {
+      margin-bottom: 24px;
+    }
+
+    &__btn {
+      font-size: 19px;
+      line-height: 22px;
+      border-radius: 4px;
+      height: 32px;
+    }
+
+    .region {
+      position: relative;
+
+      &__img-wrapper {
+        width: 156px;
+        height: 156px;
+        margin-bottom: 8px;
+      }
+
+      &__arrow-wrap {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 95%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+      }
+
+      &__arrow {
+        width: 25px;
+        height: 25px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+.footer {
+  background: #10367c;
+
+  &__logo {
+    display: none;
+  }
+
+  &__navigation {
+    margin: 70px 0 0 0;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__list {
+      margin-bottom: 64px;
+    }
+
+    &__list-item {
+      margin-bottom: 24px;
+    }
+
+    &__link {
+      font-size: 20px;
+      line-height: 23px;
+      color: #fff;
+    }
+
+    &__list-item--title {
+      pointer-events: none;
+      cursor: default;
+      text-decoration: none;
+    }
+
+    &__list-item--body {
+      display: block;
+    }
+  }
+
+  .copyright {
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    &__logo {
+      display: none;
+    }
+
+    &__navigation {
+      margin: 0;
+    }
+
+    .nav {
+      align-items: flex-start;
+
+      &__list {
+        margin-bottom: 20px;
+      }
+
+      &__list-item {
+        margin-bottom: 18px;
+      }
+
+      &__link {
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+      }
+
+      &__list-item--title {
+        pointer-events: none;
+        cursor: default;
+        text-decoration: none;
+      }
+
+      &__list-item--body {
+        display: block;
+      }
+    }
+
+    .copyright {
+      font-size: 12px;
+      line-height: 14px;
+      text-align: left;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footer {
+    &__logo {
+      margin-top: 28px;
+      display: block;
+      text-align: center;
+    }
+
+    &__navigation {
+      margin: 40px 0 32px 0;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+
+      &__list {
+        margin-bottom: 0;
+      }
+
+      &__list-item--title {
+        cursor: pointer;
+        pointer-events: all;
+        text-decoration-line: underline;
+        font-weight: 500;
+      }
+
+      &__list-item--body {
+        display: none;
+      }
+
+      &__link {
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+
+    .copyright {
+      text-align: center;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+}
