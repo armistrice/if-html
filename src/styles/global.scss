@@ -41,6 +41,26 @@ a {
   color: #3077c6;
 }
 
+.button {
+  cursor: pointer;
+  border: none;
+  color: #383838;
+  border: 0;
+  padding-left: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  height: 64px;
+  border-radius: 8px;
+  background: #f3f3f4;
+
+  &:hover {
+    background: #3077c6;
+    color: #fff;
+    transition: all 0.3;
+  }
+}
+
 .title {
   font-weight: 500;
   font-size: 40px;
@@ -120,6 +140,12 @@ a {
   .img-text {
     font-size: 14px;
     line-height: 16px;
+  }
+
+  .button {
+    padding: 0;
+    font-size: 19px;
+    line-height: 22px;
   }
 
   .title {

@@ -11,37 +11,29 @@
     margin-bottom: 66px;
   }
 
-  &__btn {
-    font-size: 24px;
-    line-height: 28px;
-    height: 64px;
-    background: #f3f3f4;
-    border-radius: 8px;
-  }
-
-  &__btn--active {
+  .button--active {
     color: #fff;
     background: #3077c6;
   }
 
-  &__btn--regions {
+  .button--regions {
     width: 20%;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
 
-  &__btn--cities {
+  .button--cities {
     width: 20%;
     border-radius: 0;
   }
 
-  &__btn--placesfull {
+  .button--placesfull {
     width: 30%;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
 
-  &__btn--places {
+  .button--places {
     display: none;
   }
 

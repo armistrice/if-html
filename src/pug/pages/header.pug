@@ -31,7 +31,7 @@ section.header
           .header__form-wrap.header__form-wrap--quantity
             input.header__form-input.header__form-input--quantity(type="text" value="2 Adults — 0 Children — 1 Room" name="quantity")
           .header__form-wrap.header__form-wrap--btn
-            button.header__form-input.header__form-input--btn(type="submit") Search
+            button.header__form-input.button(type="submit") Search
           //- For mobile phones
         form.header__form-mobile(action="/" method="get")
           .header__form-mobile-city
@@ -56,7 +56,7 @@ section.header
                 label.header__form-mobile-label Rooms
                 input.header__form-mobile-input.header__form-mobile-input--rooms(type="text" name="quantity-rooms" value="1")
             .header__form-mobile-wrap
-              button.header__form-mobile-input.header__form-mobile-input--btn(type="submit") Search
+              button.header__form-mobile-input.button(type="submit") Search
         .header__apps
           each value in {'Google' : 'googleplay', 'Apple' : 'appstore'}
             a.header__apps-item(href="#")
