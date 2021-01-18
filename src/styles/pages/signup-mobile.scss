@@ -1,0 +1,46 @@
+.signup-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 480px) {
+  .signup-mobile {
+    display: block;
+    background: #fff;
+
+    &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__close {
+      background: url(#{$img-path}close.svg) no-repeat center;
+      width: 16px;
+      height: 16px;
+    }
+
+    &__logo-wrapper {
+      width: 58px;
+      height: 58px;
+      background: #3077c6;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+    }
+
+    &__text {
+      font-size: 12px;
+      line-height: 14px;
+      width: 50%;
+    }
+
+    &__link {
+      font-size: 14px;
+      line-height: 16px;
+      color: #3077c6;
+    }
+  }
+}
