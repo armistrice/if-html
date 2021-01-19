@@ -110,26 +110,19 @@
       justify-content: space-between;
     }
 
-    &__btn {
-      font-size: 22px;
-      line-height: 24px;
-      border-radius: 6px;
-      height: 48px;
-    }
-
-    &__btn--regions {
+    .button--regions {
       width: 30%;
     }
 
-    &__btn--cities {
+    .button--cities {
       width: 30%;
     }
 
-    &__btn--placesfull {
+    .button--placesfull {
       display: none;
     }
 
-    &__btn--places {
+    .button--places {
       width: 30%;
       display: block;
     }
@@ -164,13 +157,6 @@
 
     &__tab {
       margin-bottom: 24px;
-    }
-
-    &__btn {
-      font-size: 19px;
-      line-height: 22px;
-      border-radius: 4px;
-      height: 32px;
     }
 
     .region {
