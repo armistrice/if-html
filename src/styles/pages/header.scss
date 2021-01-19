@@ -53,7 +53,6 @@
   }
 
   &__ico-theme {
-    cursor: pointer;
     width: 30px;
     height: 30px;
     background: url(#{$img-path}night.svg) no-repeat center;
@@ -61,7 +60,6 @@
   }
 
   &__ico-account {
-    cursor: pointer;
     width: 40px;
     height: 40px;
     background: url(#{$img-path}account.svg) no-repeat center;

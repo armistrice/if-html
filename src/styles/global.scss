@@ -19,6 +19,14 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
 .container {
   max-width: 1232px;
   padding: 50px 16px 120px 16px;
