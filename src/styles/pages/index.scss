@@ -1,8 +1,8 @@
 $img-path: "../assets/images/";
-@import "./header";
-@import "./offer";
-@import "./homes";
-@import "./dest";
-@import "./signup";
-@import "./signup-mobile.scss";
-@import "./footer";
+@import "./sections/header";
+@import "./sections/offers";
+@import "./sections/homes";
+@import "./sections/dest";
+@import "./sections/signup";
+@import "./sections/reviews";
+@import "./sections/footer";

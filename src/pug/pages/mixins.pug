@@ -1,0 +1,46 @@
+- var offersValue = [{imgIco: 'support.svg', offersText: 'Support 24/7'},{imgIco: 'communicate.svg', offersText: 'Communicate directly'},{imgIco: 'booking.svg', offersText: 'Book online'},{imgIco: 'reviews.svg', offersText: 'Real guests reviews'}]
+- var homesValue = [{imgIco: 'hotel-leopold.jpg', link: 'Hotel Leopold', homesText: 'Saint Petersburg, Russia'},{imgIco: 'apartment-sunshine.jpg', link: 'Apartment Sunshine', homesText: 'Santa  Cruz de Tenerife, Spain'},{imgIco: 'villa-kunerad.jpg', link: 'Villa Kunerad', homesText: 'Vysokie Tatry, Slowakia'},{imgIco: 'hostel-friendship.jpg', link: 'Hostel Friendship', homesText: 'Berlin, Germany'}]
+- var destValue = [{imgIco: 'maldives.jpg', link: 'Maldives'},{imgIco: 'spain.jpg', link: 'Spain'},{imgIco: 'norway.jpg', link: 'Norway'},{imgIco: 'island.jpg', link: 'Island'}]
+- var reviewsValue = [{imgIco: 'ubud-bali-resort.jpg', amount: '250', hotelName: 'Ubud Bali Resort&SPA', hotelLocation: 'Bali, Indonesia', rating: '9,4', quantity: '1324 reviews', userName: 'Hanna Ivanova', userLocation: 'Ukraine', userComment: 'Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice.'},{imgIco: 'king-kong-hostel.jpg', amount: '40', hotelName: 'King Kong Hostel', hotelLocation: 'Rotterdam, Netherlands', rating: '8,9', quantity: '2016 reviews', userName: 'Adam Smith', userLocation: 'USA', userComment: 'I ve been in this hostel for a month and here is the best hostel of all Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and excellent Most importantly, those who work here are kind and good-natured.'},{imgIco: 'rokoko-hotel.jpg', amount: '100', hotelName: 'Rokoko Hotel', hotelLocation: 'Ourika, Marocco', rating: '9,1', quantity: '815 reviews', userName: 'Anika Messer', userLocation: 'Germany', userComment: 'Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at this location during my next stay in Marocco.'}]
+mixin cardItem(offersValue)
+  each value in offersValue
+    if value.offersText
+      .offers__advantages-item
+        .offers__advantages-img-wrapper
+          img.img(src=images + value.imgIco alt= value.offersText)
+        p.offers__advantages-text= value.offersText
+    else if value.homesText
+      .homes__places-item
+        .homes__places-img-wrapper
+          a(href="#")
+            img.img(src=images + value.imgIco alt=value.homesText)
+        a.link(href="#")= value.link
+        p.homes__places-text= value.homesText
+    else
+      .dest__places-item
+        .dest__places-img-wrapper
+          a.dest__button-link.button-link(href="#") Book now
+          a(href="#")
+            img.img(src=images + value.imgIco alt=value.link)
+        a.link(href="#")= value.link
+mixin reviewsItem(reviewsValue)
+  each value in reviewsValue
+    .reviews__item
+      .reviews__hotels-img-wrapper.reviews__hotels-img-wrapper--
+        a(href="#")
+          img.img(src=images + value.imgIco alt=value.hotelName)
+      .reviews__content
+        .reviews__info
+          .reviews__place
+            a.reviews__hotel.reviews-text(href="#")= value.hotelName
+            a.reviews__hotel-location.reviews-text(href="#")= value.hotelLocation
+          .rating
+            span.rating-number.reviews-text= value.rating
+            span.rating-quantity= value.quantity
+        .reviews__user
+          .reviews__user-avatar
+            img.img(src=images + "reviews-avatar.svg")
+          .reviews__user-info
+            p.reviews__user-name.reviews-text= value.userName
+            span.reviews__user-location.reviews-text= value.userLocation
+        p.reviews__comment.reviews-text= value.userComment

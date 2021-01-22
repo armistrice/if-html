@@ -1,0 +1,36 @@
+- var images = "../src/assets/images/"
+section.header
+  .container
+    header.header__header
+      .logo-wrapper
+        a(href="#")
+         img.img(src=images + "logo.svg" alt="Triphouse logo")
+      nav.nav
+        ul.nav__list
+          li.nav__list-item
+            a.nav__link(href="#") Stays
+          li.nav__list-item
+            a.nav__link(href="#") Attractions
+          li.nav__list-item
+            button.nav__theme
+          li.nav__list-item
+            button.nav__account
+    h2.header__title Discover stays<br>to live, work or just relax
+    form.header__form.form(action="/" method="GET")
+      .form__input-wrapper
+        input.form__input.form__input--city(type="text" name="city" required)
+        label.form__label.form__label--city(for="city") Your destination or hotel name
+      .form__input-wrapper
+        input.form__input.form__input--date(type="text" name="date" required)
+        label.form__label.form__label--date(for="date") Check-in — Check-out
+      .form__input-wrapper
+        input.form__input.form__input--quantity(type="text" name="quantity" required)
+      .form__input-wrapper
+        button.button.button--active(type="submit") Search
+    .header__apps
+      .header__apps-item
+        a(href="#")
+         img.img(src=images + "google-play.svg" alt="Download in Google Play")
+      .header__apps-item
+        a(href="#")
+          img.img(src=images + "app-store.svg" alt="Download in App Store")

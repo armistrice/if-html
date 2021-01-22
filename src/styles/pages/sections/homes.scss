@@ -1,0 +1,25 @@
+.homes {
+  background-color: #eaf0f9;
+
+  &__title {
+    margin-bottom: 112px;
+  }
+
+  &__places {
+    &-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-img-wrapper {
+      width: 296px;
+      height: 296px;
+      margin-bottom: 24px;
+    }
+
+    &-text {
+      color: #bfbfbf;
+      width: 296px;
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.reviews {
+  background: #fff;
+
+  &__title {
+    margin-bottom: 112px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-right: 16px;
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+
+  &__hotels-img-wrapper {
+    width: 400px;
+    height: 400px;
+    position: relative;
+
+    &::after {
+      content: "From 250 USD";
+      position: absolute;
+      display: flex;
+      align-items: center;
+      padding-left: 24px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: #fff;
+      height: 48px;
+      font-size: 18px;
+      line-height: 21px;
+      background: rgba(56, 56, 56, 0.7);
+    }
+  }
+
+  &__content {
+    padding: 24px;
+    background: #eaf0f9;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &-text {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__hotel {
+    margin-bottom: 16px;
+    display: block;
+    font-weight: 500;
+    color: #3077c6;
+
+    &-location {
+      color: #3077c6;
+    }
+  }
+
+  .rating {
+    display: flex;
+    flex-direction: column;
+
+    &-number {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      color: #ffffff;
+      background: #10367c;
+      border-radius: 8px;
+      width: 48px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 35px;
+      margin-bottom: 12px;
+    }
+
+    &-quantity {
+      font-size: 14px;
+      line-height: 16px;
+      color: #bfbfbf;
+    }
+  }
+
+  &__user {
+    display: flex;
+    margin-bottom: 17px;
+
+    &-avatar {
+      margin-right: 21px;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-name {
+      margin-bottom: 8px;
+    }
+
+    &-location {
+      color: #bfbfbf;
+      padding-left: 20px;
+    }
+  }
+
+  &__comment {
+  }
+}

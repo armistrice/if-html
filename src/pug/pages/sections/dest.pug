@@ -1,0 +1,10 @@
+include ../mixins
+section.dest
+  .container.inner
+    h2.dest__title.title The best destinations
+    .dest__tab
+      button.dest__button.button.button--active Regions
+      button.dest__button.button Cities
+      button.dest__button.button.button--size Places of interest
+    .row
+      +cardItem(destValue)

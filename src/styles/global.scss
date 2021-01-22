@@ -1,72 +1,55 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
 }
 
 body {
-  min-width: 360px;
   font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
   color: #383838;
 }
 
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button:focus {
-  outline: 0;
-}
-
 .container {
-  max-width: 1232px;
-  padding: 50px 16px 120px 16px;
-  margin: 0 auto;
   width: 100%;
-}
-
-.container--nomargin {
-  padding-top: 0;
-  padding-bottom: 0;
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 1232px;
 }
 
 .img {
   max-width: 100%;
-}
-
-.img-text {
-  font-size: 24px;
-  line-height: 28px;
-  color: #3077c6;
+  display: block;
+  margin: 0 auto;
 }
 
 .button {
-  cursor: pointer;
   border: none;
-  color: #383838;
-  border: 0;
-  padding-left: 0;
+  border-radius: 8px;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
+  color: #383838;
   height: 64px;
-  border-radius: 8px;
-  background: #f3f3f4;
+  cursor: pointer;
+  width: 192px;
 
-  &:hover {
-    background: #3077c6;
+  &--active {
     color: #fff;
-    transition: all 0.3;
+    background: #3077c6;
+
+    &:hover {
+      background: darken($color: #3077c6, $amount: 10);
+      transition: all 0.3s;
+    }
   }
+
+  &--size {
+    width: 240px;
+  }
+}
+
+.inner {
+  padding: 120px 0;
 }
 
 .title {
@@ -74,169 +57,30 @@ button:focus {
   font-size: 40px;
   line-height: 47px;
   text-align: center;
-
-  &--active::after {
-    position: absolute;
-    content: " ";
-    width: 100px;
-    height: 4px;
-    background: #f5bd41;
-    left: 50%;
-    top: 140%;
-    transform: translate(-50%, -50%);
-  }
 }
 
-.btn {
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  color: #3077c6;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.button-link {
+  background: #ffffff;
+  border: 1px solid #3077c6;
+  border-radius: 8px;
+  width: 128px;
+  height: 48px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #3077c6;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 128px;
-  height: 48px;
-  background: #ffffff;
-  border: 1px solid #3077c6;
-  color: #3077c6;
-  font-size: 18px;
-  line-height: 21px;
-  z-index: 2;
-}
-
-@media only screen and (max-width: 768px) {
-  // For tablets
-  .col-s-1 {
-    width: 8.33%;
-  }
-  .col-s-2 {
-    width: 16.66%;
-  }
-  .col-s-3 {
-    width: 25%;
-  }
-  .col-s-4 {
-    width: 33.33%;
-  }
-  .col-s-5 {
-    width: 41.66%;
-  }
-  .col-s-6 {
-    width: 50%;
-  }
-  .col-s-7 {
-    width: 58.33%;
-  }
-  .col-s-8 {
-    width: 66.66%;
-  }
-  .col-s-9 {
-    width: 75%;
-  }
-  .col-s-10 {
-    width: 83.33%;
-  }
-  .col-s-11 {
-    width: 91.66%;
-  }
-  .col-s-12 {
-    width: 100%;
-  }
-
-  .container {
-    max-width: 780px;
-    padding: 50px 16px 50px 16px;
-  }
-
-  .img-text {
-    font-size: 14px;
-    line-height: 16px;
-  }
-
-  .button {
-    padding: 0;
-    font-size: 22px;
-    line-height: 24px;
-    border-radius: 6px;
-    height: 48px;
-  }
-
-  .title {
-    font-size: 28px;
-    line-height: 32px;
-
-    &--active::after {
-      position: absolute;
-      content: " ";
-      width: 70px;
-      height: 4px;
-      background: #f5bd41;
-      left: 50%;
-      top: 120%;
-      transform: translate(-50%, -50%);
-    }
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  // For mobile phones
-  .col-m-1 {
-    width: 8.33%;
-  }
-  .col-m-2 {
-    width: 16.66%;
-  }
-  .col-m-3 {
-    width: 25%;
-  }
-  .col-m-4 {
-    width: 33.33%;
-  }
-  .col-m-5 {
-    width: 41.66%;
-  }
-  .col-m-6 {
-    width: 50%;
-  }
-  .col-m-7 {
-    width: 58.33%;
-  }
-  .col-m-8 {
-    width: 66.66%;
-  }
-  .col-m-9 {
-    width: 75%;
-  }
-  .col-m-10 {
-    width: 83.33%;
-  }
-  .col-m-11 {
-    width: 91.66%;
-  }
-  .col-m-12 {
-    width: 100%;
-  }
-
-  .container {
-    max-width: 328px;
-    padding: 12px 0 40px 0;
-  }
-
-  .img-text {
-    font-size: 12px;
-    line-height: 14px;
-  }
-
-  .button {
-    font-size: 19px;
-    line-height: 22px;
-    border-radius: 4px;
-    height: 32px;
-  }
-
-  .title {
-    font-size: 28px;
-    line-height: 33px;
-
-    &--active::after {
-      display: none;
-    }
-  }
+  opacity: 1;
 }
