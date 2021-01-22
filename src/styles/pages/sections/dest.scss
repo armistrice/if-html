@@ -5,6 +5,17 @@
     margin-bottom: 112px;
   }
 
+  &__arrow {
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    transform: translate(-50%, -50%);
+  }
+
+  .arrow--rotate {
+    transform: rotate(90deg);
+  }
+
   &__tab {
     background: #f3f3f4;
     border-radius: 8px;

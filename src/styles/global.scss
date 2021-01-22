@@ -62,6 +62,22 @@ body {
 .row {
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+
+.arrow-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: 2;
+}
+
+.arrow {
+  background: url("#{$img-path}arrow.svg") center no-repeat;
+  width: 40px;
+  height: 40px;
 }
 
 .link {
