@@ -122,7 +122,7 @@
       padding-left: 24px;
 
       &--city {
-        width: 468px;
+        width: 460px;
         border-right: none;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
@@ -138,7 +138,7 @@
       }
 
       &--date {
-        width: 259px;
+        width: 251px;
         border: 3px solid #f5bd41;
 
         &:focus ~ .form__label--date,
@@ -151,7 +151,7 @@
       }
 
       &--quantity {
-        width: 313px;
+        width: 305px;
         border: none;
       }
     }
