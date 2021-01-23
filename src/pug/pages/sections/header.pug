@@ -32,6 +32,30 @@ section.header
         input.form__input(type="text" name="quantity" required)
       .form__input-wrapper.form__input-wrapper--search
         button.button.button--active(type="submit") Search
+    form.header__form-mobile.form-mobile(action="/" method="GET")
+      .form-mobile__input-wrapper
+        input.form-mobile__input.form-mobile__input--up(type="text" name="city" required)
+        label.form-mobile__label.form-mobile__label--search.form-mobile__label--up(for="city") Your destination or hotel name
+      .form-mobile__date-wrapper
+        .form-mobile__input-wrapper
+          input.form-mobile__input.form-mobile__input--up(type="text" name="date-checkin" required)
+          label.form-mobile__label.form-mobile__label--up(for="date-checkin") Check-in
+        .form-mobile__input-wrapper
+          input.form-mobile__input.form-mobile__input--up(type="text" name="date-checkout" required)
+          label.form-mobile__label.form-mobile__label--up(for="date-checkout") Check-out
+      .form-mobile__quantity-wrapper
+        .form-mobile__input-wrapper
+          input.form-mobile__input.form-mobile__input--up(type="text" name="city" required)
+          label.form-mobile__label.form-mobile__label--up(for="city") Adults
+        .form-mobile__input-wrapper
+          input.form-mobile__input.form-mobile__input--up(type="text" name="city" required)
+          label.form-mobile__label.form-mobile__label--up(for="city") Children
+        .form-mobile__input-wrapper
+          input.form-mobile__input.form-mobile__input--up(type="text" name="city" required)
+          label.form-mobile__label.form-mobile__label--up(for="city") Rooms
+      .form-mobile__input-wrapper.test
+        button.button.button--active(type="submit") Search
+      
     .header__apps
       .header__apps-item
         a(href="#")

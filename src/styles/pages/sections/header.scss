@@ -115,13 +115,12 @@
       }
 
       &--search {
+        width: 16%;
         border: none;
       }
     }
 
     &__label {
-      font-size: 18px;
-      line-height: 21px;
       color: #383838;
 
       &--up {
@@ -152,6 +151,10 @@
     }
   }
 
+  &__form-mobile {
+    display: none;
+  }
+
   &__apps {
     display: flex;
     align-items: center;
@@ -170,6 +173,8 @@
 
 @media only screen and (max-width: 480px) {
   .header {
+    background: url("#{$img-path}bg.jpg") center no-repeat;
+
     &__header {
       padding-top: 12px;
       margin-bottom: 52px;
@@ -229,6 +234,90 @@
 
     .form {
       display: none;
+    }
+
+    &__form-mobile {
+      margin-bottom: 32px;
+    }
+
+    .form-mobile {
+      display: block;
+      background: #f5bd41;
+      padding: 8px;
+
+      &__input-wrapper {
+        position: relative;
+        background: #ffffff;
+        border-radius: 4px;
+        height: 48px;
+        margin-bottom: 8px;
+
+        &:nth-last-child(1) {
+          margin-bottom: 0;
+        }
+      }
+
+      &__date-wrapper > .form-mobile__input-wrapper {
+        margin-right: 8px;
+
+        &:nth-last-child(1) {
+          margin-right: 0;
+        }
+      }
+
+      &__quantity-wrapper > .form-mobile__input-wrapper {
+        margin-right: 8px;
+
+        &:nth-last-child(1) {
+          margin-right: 0;
+        }
+      }
+
+      &__date-wrapper,
+      &__quantity-wrapper {
+        display: flex;
+      }
+
+      &__label {
+        color: #383838;
+        font-weight: 500;
+        height: 16px;
+
+        &--search {
+          background: url("#{$img-path}search.svg") left no-repeat;
+          padding-left: 20px;
+        }
+
+        &--up {
+          position: absolute;
+          width: 100%;
+          left: 10px;
+          top: 24px;
+          transition: all 0.3s;
+          pointer-events: none;
+        }
+      }
+
+      &__input {
+        width: 100%;
+        height: 100%;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        padding: 24px 0 0 8px;
+        border-radius: 4px;
+
+        &--up {
+          &:focus ~ .form-mobile__label--up,
+          &:not(:focus):valid ~ .form-mobile__label--up {
+            top: 6px;
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 400;
+            transition: all 0.3s;
+          }
+        }
+      }
     }
 
     &__apps {

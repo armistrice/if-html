@@ -36,7 +36,7 @@ button {
   color: #383838;
   height: 64px;
   cursor: pointer;
-  width: 186px;
+  width: 100%;
 
   &--active {
     color: #fff;
@@ -159,7 +159,6 @@ button {
     font-size: 19px;
     line-height: 22px;
     height: 48px;
-    width: 99px;
   }
 
   .inner {
