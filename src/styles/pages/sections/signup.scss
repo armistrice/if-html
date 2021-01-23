@@ -1,13 +1,6 @@
 .signup {
   background: #fff;
 
-  &__inner {
-    padding: 52px 24px;
-    background: #eaf0f9;
-    display: flex;
-    position: relative;
-  }
-
   &__close {
     background: url("#{$img-path}close.svg") center no-repeat;
     width: 26px;
@@ -31,5 +24,11 @@
 
   &__text {
     margin-bottom: 21px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .signup {
+    display: none;
   }
 }

@@ -32,6 +32,11 @@
     &-item {
       display: flex;
       flex-direction: column;
+      margin-right: 16px;
+
+      &:nth-last-child(1) {
+        margin-right: 0;
+      }
     }
 
     &-img-wrapper {
@@ -79,6 +84,15 @@
       margin-bottom: 32px;
     }
 
+    &__arrow {
+      top: 38%;
+      left: 100%;
+    }
+
+    .arrow--rotate {
+      transform: none;
+    }
+
     &__tab {
       background: none;
       justify-content: space-between;
@@ -92,6 +106,13 @@
 
       &--mobile {
         display: block;
+      }
+    }
+
+    &__places {
+      &-img-wrapper {
+        width: 156px;
+        height: 156px;
       }
     }
   }
