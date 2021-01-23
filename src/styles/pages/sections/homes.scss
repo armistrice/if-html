@@ -30,3 +30,18 @@
     }
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .homes {
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__places {
+      &-img-wrapper {
+        // width: 156px;
+        // height: 156px;
+      }
+    }
+  }
+}

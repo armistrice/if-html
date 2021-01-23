@@ -7,6 +7,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #383838;
+  min-width: 360px;
 }
 
 button {
@@ -35,7 +36,7 @@ button {
   color: #383838;
   height: 64px;
   cursor: pointer;
-  width: 184px;
+  width: 186px;
 
   &--active {
     color: #fff;
@@ -103,4 +104,92 @@ button {
   align-items: center;
   justify-content: center;
   opacity: 1;
+}
+
+@media only screen and (max-width: 480px) {
+  // For mobile phones
+  .col-m-1 {
+    width: 8.33%;
+  }
+  .col-m-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+
+  body {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .container {
+    max-width: 328px;
+  }
+
+  .button {
+    border-radius: 4px;
+    font-size: 19px;
+    line-height: 22px;
+    height: 48px;
+    width: 99px;
+  }
+
+  .inner {
+    padding: 40px 0;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .row {
+    justify-content: center;
+  }
+
+  .arrow-wrap {
+    width: 28px;
+    height: 28px;
+  }
+
+  .arrow {
+    width: 28px;
+    height: 28px;
+  }
+
+  .link {
+    margin-bottom: 4px;
+  }
+
+  .button-link {
+    display: none;
+  }
 }

@@ -17,22 +17,58 @@
     }
   }
 
+  .row--wrap {
+    flex-wrap: wrap;
+  }
+
+  &__advantages {
+    &-item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 25%;
+    }
+
+    &-img-wrapper {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
   .offers {
+    &__title {
+      margin-bottom: 32px;
+
+      &::after {
+        display: none;
+      }
+    }
+
     &__advantages {
       &-item {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 25%;
+        margin-bottom: 32px;
+
+        &:nth-last-child(1) {
+          margin-bottom: 0;
+        }
       }
 
       &-img-wrapper {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 70px;
+        height: 70px;
+        margin-bottom: 16px;
+      }
+
+      &-text {
+        font-size: 15px;
+        line-height: 18px;
       }
     }
   }

@@ -15,17 +15,22 @@ section.header
             button.nav__theme
           li.nav__list-item
             button.nav__account
+          li.nav__list-item
+            .burger
+                .burger__line
+                .burger__line
+                .burger__line
     h2.header__title Discover stays<br>to live, work or just relax
     form.header__form.form(action="/" method="GET")
-      .form__input-wrapper
-        input.form__input.form__input--city(type="text" name="city" required)
-        label.form__label.form__label--city(for="city") Your destination or hotel name
-      .form__input-wrapper
-        input.form__input.form__input--date(type="text" name="date" required)
-        label.form__label.form__label--date(for="date") Check-in — Check-out
-      .form__input-wrapper
-        input.form__input.form__input--quantity(type="text" name="quantity" required)
-      .form__input-wrapper
+      .form__input-wrapper.form__input-wrapper--city
+        input.form__input.form__input--up(type="text" name="city" required)
+        label.form__label.form__label--up(for="city") Your destination or hotel name
+      .form__input-wrapper.form__input-wrapper--date
+        input.form__input.form__input--up(type="text" name="date" required)
+        label.form__label.form__label--up(for="date") Check-in — Check-out
+      .form__input-wrapper.form__input-wrapper--quantity
+        input.form__input(type="text" name="quantity" required)
+      .form__input-wrapper.form__input-wrapper--search
         button.button.button--active(type="submit") Search
     .header__apps
       .header__apps-item

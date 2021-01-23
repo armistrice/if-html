@@ -5,7 +5,7 @@
 mixin cardItem(offersValue)
   each value in offersValue
     if value.offersText
-      .offers__advantages-item
+      .offers__advantages-item.col-m-12.col-s-6
         .offers__advantages-img-wrapper
           img.img(src=images + value.imgIco alt= value.offersText)
         p.offers__advantages-text= value.offersText
