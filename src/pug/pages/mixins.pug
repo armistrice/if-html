@@ -10,7 +10,7 @@ mixin cardItem(offersValue)
           img.img(src=images + value.imgIco alt= value.offersText)
         p.offers__advantages-text= value.offersText
     else if value.homesText
-      .homes__places-item
+      .homes__places-item.col-m-6
         .homes__places-img-wrapper
           a(href="#")
             img.img(src=images + value.imgIco alt=value.homesText)

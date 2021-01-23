@@ -19,8 +19,6 @@
     }
 
     &-img-wrapper {
-      width: 296px;
-      height: 296px;
       margin-bottom: 24px;
     }
 
@@ -37,10 +35,15 @@
       margin-bottom: 32px;
     }
 
+    &__arrow {
+      left: 98%;
+    }
+
     &__places {
       &-img-wrapper {
-        // width: 156px;
-        // height: 156px;
+        width: 156px;
+        height: 156px;
+        margin-bottom: 8px;
       }
     }
   }
