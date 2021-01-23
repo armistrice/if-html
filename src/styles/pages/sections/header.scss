@@ -283,11 +283,6 @@
         font-weight: 500;
         height: 16px;
 
-        &--search {
-          background: url("#{$img-path}search.svg") left no-repeat;
-          padding-left: 20px;
-        }
-
         &--up {
           position: absolute;
           width: 100%;
@@ -295,6 +290,12 @@
           top: 24px;
           transition: all 0.3s;
           pointer-events: none;
+        }
+
+        &--search {
+          background: url("#{$img-path}search.svg") left no-repeat;
+          top: 18px;
+          padding-left: 20px;
         }
       }
 
