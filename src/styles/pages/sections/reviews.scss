@@ -165,11 +165,19 @@
       }
     }
   }
+
+  .dots {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   .reviews {
     background: #eaf0f9;
+
+    &__arrow {
+      display: none;
+    }
 
     &__title {
       margin-bottom: 32px;
@@ -231,6 +239,32 @@
 
       &-name {
         margin-bottom: 4px;
+      }
+    }
+
+    .dots {
+      display: flex;
+      justify-content: center;
+
+      &__item {
+        margin-right: 8px;
+
+        &:nth-last-child(1) {
+          margin-right: 0;
+        }
+      }
+
+      &__circle {
+        background: transparent;
+        border: 1px solid #000;
+        width: 8px;
+        height: 8px;
+        padding: 0;
+        border-radius: 50%;
+
+        &--active {
+          background: #000;
+        }
       }
     }
   }

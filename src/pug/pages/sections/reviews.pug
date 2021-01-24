@@ -6,3 +6,10 @@ section.reviews
       div.reviews__arrow.arrow-wrap
         button.arrow
       +reviewsItem(reviewsValue)
+    ul.dots
+      -  for (var x=0; x<4; x++) 
+          li.dots__item
+            if x === 0
+              button.dots__circle.dots__circle--active
+            else
+              button.dots__circle
