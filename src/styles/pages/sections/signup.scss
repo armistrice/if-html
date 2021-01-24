@@ -2,13 +2,8 @@
   background: #fff;
 
   &__close {
-    background: url("#{$img-path}close.svg") center no-repeat;
-    width: 26px;
-    height: 26px;
-    position: absolute;
     left: 97%;
     top: 15%;
-    transform: translate(-50%, -50%);
   }
 
   &__avatar {

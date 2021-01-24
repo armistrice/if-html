@@ -16,7 +16,7 @@
     &-item {
       display: flex;
       flex-direction: column;
-      margin-right: 16px;
+      margin-right: 10px;
 
       &:nth-last-child(1) {
         margin-right: 0;
@@ -41,7 +41,7 @@
     }
 
     &__arrow {
-      left: 102%;
+      left: 100%;
     }
 
     &__places {

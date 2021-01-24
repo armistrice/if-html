@@ -28,8 +28,40 @@
     height: 400px;
     position: relative;
 
-    &::after {
+    &--250::after {
       content: "From 250 USD";
+      position: absolute;
+      display: flex;
+      align-items: center;
+      padding-left: 24px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: #fff;
+      height: 48px;
+      font-size: 18px;
+      line-height: 21px;
+      background: rgba(56, 56, 56, 0.7);
+    }
+
+    &--40::after {
+      content: "From 40 USD";
+      position: absolute;
+      display: flex;
+      align-items: center;
+      padding-left: 24px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: #fff;
+      height: 48px;
+      font-size: 18px;
+      line-height: 21px;
+      background: rgba(56, 56, 56, 0.7);
+    }
+
+    &--100::after {
+      content: "From 100 USD";
       position: absolute;
       display: flex;
       align-items: center;
@@ -118,9 +150,88 @@
 
     &-location {
       color: #bfbfbf;
+      padding-left: 25px;
+
+      &--ua {
+        background: url("#{$img-path}ua.svg") left no-repeat;
+      }
+
+      &--usa {
+        background: url("#{$img-path}usa.svg") left no-repeat;
+      }
+
+      &--de {
+        background: url("#{$img-path}de.svg") left no-repeat;
+      }
     }
   }
+}
 
-  &__comment {
+@media only screen and (max-width: 480px) {
+  .reviews {
+    background: #eaf0f9;
+
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__item {
+      width: 327px;
+    }
+
+    &__hotels-img-wrapper {
+      width: 327px;
+      height: 325px;
+      margin-bottom: 12px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__content {
+      padding: 0;
+      height: 250px;
+    }
+
+    &__info {
+      margin-bottom: 20px;
+    }
+
+    &-text {
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    &__hotel {
+      margin-bottom: 8px;
+    }
+
+    .rating {
+      &-number {
+        width: 39px;
+        height: 26px;
+        margin-bottom: 4px;
+      }
+
+      &-quantity {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+
+    &__user {
+      margin-bottom: 16px;
+
+      &-avatar {
+        width: 43.73px;
+        height: 43.73px;
+        margin-right: 12px;
+      }
+
+      &-name {
+        margin-bottom: 4px;
+      }
+    }
   }
 }

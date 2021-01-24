@@ -19,9 +19,18 @@
   &__tab {
     background: #f3f3f4;
     border-radius: 8px;
-    width: 49.68%;
     margin-bottom: 66px;
     display: flex;
+    width: 50.5%;
+  }
+
+  &__button {
+    width: 192px;
+    height: 64px;
+  }
+
+  .button--full {
+    width: 240px;
   }
 
   .button--mobile {
@@ -95,8 +104,16 @@
 
     &__tab {
       background: none;
-      justify-content: space-between;
-      width: auto;
+      width: 100%;
+    }
+
+    &__button {
+      height: 32px;
+      margin-right: 16px;
+
+      &:nth-last-child(1) {
+        margin-right: 0;
+      }
     }
 
     .button {

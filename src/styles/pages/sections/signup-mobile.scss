@@ -1,0 +1,37 @@
+.signup-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .signup-mobile {
+    display: block;
+    background: #fff;
+
+    &__close {
+      left: 0%;
+      top: 50%;
+    }
+
+    &__logo-wrapper {
+      width: 50%;
+      height: 58px;
+      background: #3077c6;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      margin: 0 16px;
+    }
+
+    &__text {
+      width: 120%;
+      margin-right: 16px;
+    }
+
+    &__link {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #3077c6;
+    }
+  }
+}

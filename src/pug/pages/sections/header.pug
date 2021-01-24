@@ -2,7 +2,7 @@
 section.header
   .container
     header.header__header
-      .logo-wrapper
+      .header__logo-wrapper
         a(href="#")
          img.img(src=images + "logo.svg" alt="Triphouse logo")
       nav.nav
@@ -31,7 +31,7 @@ section.header
       .form__input-wrapper.form__input-wrapper--quantity
         input.form__input(type="text" name="quantity" required)
       .form__input-wrapper.form__input-wrapper--search
-        button.button.button--active(type="submit") Search
+        button.form__input.button.button--active(type="submit") Search
     form.header__form-mobile.form-mobile(action="/" method="GET")
       .form-mobile__input-wrapper
         input.form-mobile__input.form-mobile__input--up(type="text" name="city" required)
@@ -63,3 +63,11 @@ section.header
       .header__apps-item
         a(href="#")
           img.img(src=images + "app-store.svg" alt="Download in App Store")
+- var reviewsValue = [{imgIco: 'ubud-bali-resort.jpg', amount: '250', hotelName: 'Ubud Bali Resort&SPA', hotelLocation: 'Bali, Indonesia', rating: '9,4', quantity: '1324 reviews', userName: 'Hanna Ivanova', userLocation: 'Ukraine', userComment: 'Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice.'},{imgIco: 'king-kong-hostel.jpg', amount: '40', hotelName: 'King Kong Hostel', hotelLocation: 'Rotterdam, Netherlands', rating: '8,9', quantity: '2016 reviews', userName: 'Adam Smith', userLocation: 'USA', userComment: 'I ve been in this hostel for a month and here is the best hostel of all Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and excellent Most importantly, those who work here are kind and good-natured.'},{imgIco: 'rokoko-hotel.jpg', amount: '100', hotelName: 'Rokoko Hotel', hotelLocation: 'Ourika, Marocco', rating: '9,1', quantity: '815 reviews', userName: 'Anika Messer', userLocation: 'Germany', userComment: 'Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at this location during my next stay in Marocco.'}]
+
+    mixin reviewsItem(reviewsValue)
+      each value in reviewsValue
+        .reviews__item.slider-disabled.col-m-12
+          .reviews__hotels-img-wrapper.reviews__hotels-img-wrapper--
+            a(href="#")
+              img.img(src=images + value.imgIco alt=value.hotelName)

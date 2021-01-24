@@ -151,7 +151,7 @@
     }
   }
 
-  &__form-mobile {
+  .form-mobile {
     display: none;
   }
 
@@ -180,7 +180,7 @@
       margin-bottom: 52px;
     }
 
-    .logo-wrapper {
+    &__logo-wrapper {
       width: 121.92px;
       height: 24px;
     }
@@ -243,7 +243,7 @@
     .form-mobile {
       display: block;
       background: #f5bd41;
-      padding: 8px;
+      border: 8px solid #f5bd41;
 
       &__input-wrapper {
         position: relative;
