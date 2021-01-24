@@ -7,7 +7,7 @@
 
   &__arrow {
     position: absolute;
-    left: 100%;
+    left: 102%;
     top: 30%;
     transform: translate(-50%, -50%);
   }
@@ -42,6 +42,7 @@
       font-size: 18px;
       line-height: 21px;
       background: rgba(56, 56, 56, 0.7);
+      pointer-events: none;
     }
 
     &--40::after {
@@ -58,6 +59,7 @@
       font-size: 18px;
       line-height: 21px;
       background: rgba(56, 56, 56, 0.7);
+      pointer-events: none;
     }
 
     &--100::after {
@@ -74,6 +76,7 @@
       font-size: 18px;
       line-height: 21px;
       background: rgba(56, 56, 56, 0.7);
+      pointer-events: none;
     }
   }
 
@@ -171,7 +174,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .reviews {
     background: #eaf0f9;
 
@@ -179,6 +182,96 @@
       display: none;
     }
 
+    &__title {
+      margin-bottom: 64px;
+    }
+
+    &__item {
+      width: 367px;
+    }
+
+    &__hotels-img-wrapper {
+      width: 367px;
+      height: 365px;
+      margin-bottom: 24px;
+    }
+
+    &__content {
+      padding: 12px;
+      height: 300px;
+    }
+
+    &__info {
+      margin-bottom: 30px;
+    }
+
+    &-text {
+      font-size: 17px;
+      line-height: 20px;
+    }
+
+    &__hotel {
+      margin-bottom: 16px;
+    }
+
+    .rating {
+      &-number {
+        width: 43px;
+        height: 29px;
+        margin-bottom: 8px;
+      }
+
+      &-quantity {
+        font-size: 13px;
+        line-height: 15px;
+      }
+    }
+
+    &__user {
+      margin-bottom: 17px;
+
+      &-avatar {
+        width: 47px;
+        height: 47px;
+        margin-right: 18px;
+      }
+
+      &-name {
+        margin-bottom: 8px;
+      }
+    }
+
+    .dots {
+      display: flex;
+      justify-content: center;
+      padding-left: 0;
+
+      &__item {
+        margin-right: 8px;
+
+        &:nth-last-child(1) {
+          margin-right: 0;
+        }
+      }
+
+      &__circle {
+        background: transparent;
+        border: 1px solid #000;
+        width: 8px;
+        height: 8px;
+        padding: 0;
+        border-radius: 50%;
+
+        &--active {
+          background: #000;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .reviews {
     &__title {
       margin-bottom: 32px;
     }
@@ -239,32 +332,6 @@
 
       &-name {
         margin-bottom: 4px;
-      }
-    }
-
-    .dots {
-      display: flex;
-      justify-content: center;
-
-      &__item {
-        margin-right: 8px;
-
-        &:nth-last-child(1) {
-          margin-right: 0;
-        }
-      }
-
-      &__circle {
-        background: transparent;
-        border: 1px solid #000;
-        width: 8px;
-        height: 8px;
-        padding: 0;
-        border-radius: 50%;
-
-        &--active {
-          background: #000;
-        }
       }
     }
   }

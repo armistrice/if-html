@@ -7,7 +7,7 @@
 
   &__arrow {
     position: absolute;
-    left: 100%;
+    left: 101%;
     top: 38%;
     transform: translate(-50%, -50%);
   }
@@ -34,10 +34,10 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .homes {
     &__title {
-      margin-bottom: 32px;
+      margin-bottom: 64px;
     }
 
     &__arrow {
@@ -45,11 +45,47 @@
     }
 
     &__places {
+      &-item {
+        width: 226px;
+      }
+
+      &-img-wrapper {
+        width: 226px;
+        height: 226px;
+        margin-bottom: 16px;
+      }
+    }
+
+    &-text {
+      width: 226px;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .homes {
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__arrow {
+      left: 101%;
+    }
+
+    &__places {
+      &-item {
+        width: 156px;
+      }
+
       &-img-wrapper {
         width: 156px;
         height: 156px;
         margin-bottom: 8px;
       }
+    }
+
+    &-text {
+      width: 156px;
     }
   }
 }
