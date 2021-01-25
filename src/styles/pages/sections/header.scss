@@ -258,10 +258,32 @@
       }
 
       &__quantity-wrapper > .form-mobile__input-wrapper {
-        margin-right: 10px;
+        position: relative;
+        border-radius: 0;
 
-        &:nth-last-child(1) {
-          margin-right: 0;
+        &::after {
+          content: "";
+          height: 32px;
+          width: 2px;
+          background: #bfbfbf;
+          position: absolute;
+          top: 50%;
+          left: 100%;
+          transform: translate(-50%, -50%);
+        }
+
+        &:nth-child(1) {
+          border-top-left-radius: 6px;
+          border-bottom-left-radius: 6px;
+        }
+
+        &:nth-child(3) {
+          border-top-right-radius: 6px;
+          border-bottom-right-radius: 6px;
+
+          &::after {
+            display: none;
+          }
         }
       }
 
@@ -392,10 +414,6 @@
       }
 
       &__date-wrapper > .form-mobile__input-wrapper {
-        margin-right: 8px;
-      }
-
-      &__quantity-wrapper > .form-mobile__input-wrapper {
         margin-right: 8px;
       }
 

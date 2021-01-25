@@ -41,11 +41,6 @@
     &-item {
       display: flex;
       flex-direction: column;
-      margin-right: 16px;
-
-      &:nth-last-child(1) {
-        margin-right: 0;
-      }
     }
 
     &-img-wrapper {
@@ -118,6 +113,9 @@
     }
 
     &__places {
+      &-item {
+      }
+
       &-img-wrapper {
         width: 226px;
         height: 226px;
@@ -138,7 +136,7 @@
     }
 
     &__arrow {
-      top: 38%;
+      top: 43%;
       left: 101%;
     }
 

@@ -22,6 +22,10 @@
 
         &--body {
           display: block;
+
+          &:hover {
+            text-decoration-line: underline;
+          }
         }
       }
 

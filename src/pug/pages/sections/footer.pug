@@ -4,38 +4,42 @@ section.footer
     .footer__logo-wrapper
       img(src=images + "logo-white.svg" alt="Triphouse logo")
     nav.footer__nav
-      ul.footer__nav-list
-        li.footer__nav-list-item.footer__nav-list-item--title
-            a.footer__nav-list-link(href="#") About
-        li.footer__nav-list-item.footer__nav-list-item--body
-            a.footer__nav-list-link(href="#") How Triphouse works
-        li.footer__nav-list-item.footer__nav-list-item--body
-            a.footer__nav-list-link(href="#") Careers
-        li.footer__nav-list-item.footer__nav-list-item--body
-            a.footer__nav-list-link(href="#") Privacy
-        li.footer__nav-list-item.footer__nav-list-item--body
-            a.footer__nav-list-link(href="#") Terms
-      ul.footer__nav-list
-        li.footer__nav-list-item.footer__nav-list-item--title
-            a.footer__nav-list-link(href="#") Property types
-        li.footer__nav-list-item.footer__nav-list-item--body
-            a.footer__nav-list-link(href="#") Guest houses
-        li.footer__nav-list-item.footer__nav-list-item--body
-            a.footer__nav-list-link(href="#") Hotels
-        li.footer__nav-list-item.footer__nav-list-item--body
-            a.footer__nav-list-link(href="#") Apartments
-        li.footer__nav-list-item.footer__nav-list-item--body
-            a.footer__nav-list-link(href="#") Villas
-        li.footer__nav-list-item.footer__nav-list-item--body
-            a.footer__nav-list-link(href="#") Holiday homes
-        li.footer__nav-list-item.footer__nav-list-item--body
-            a.footer__nav-list-link(href="#") Hostels
-      ul.footer__nav-list
-        li.footer__nav-list-item.footer__nav-list-item--title
-            a.footer__nav-list-link(href="#") Support
-        li.footer__nav-list-item.footer__nav-list-item--body
-            a.footer__nav-list-link(href="#") Contact Customer Service
-        li.footer__nav-list-item.footer__nav-list-item--body
-            a.footer__nav-list-link(href="#") FAQ
+      +footerFirstList(footerFirstValue)
+      +footerSecondList(footerSecondValue)
+      +footerThirdList(footerThirdValue)
+    //- nav.footer__nav
+    //-   ul.footer__nav-list
+    //-     li.footer__nav-list-item.footer__nav-list-item--title
+    //-         a.footer__nav-list-link(href="#") About
+    //-     li.footer__nav-list-item.footer__nav-list-item--body
+    //-         a.footer__nav-list-link(href="#") How Triphouse works
+    //-     li.footer__nav-list-item.footer__nav-list-item--body
+    //-         a.footer__nav-list-link(href="#") Careers
+    //-     li.footer__nav-list-item.footer__nav-list-item--body
+    //-         a.footer__nav-list-link(href="#") Privacy
+    //-     li.footer__nav-list-item.footer__nav-list-item--body
+    //-         a.footer__nav-list-link(href="#") Terms
+    //-   ul.footer__nav-list
+    //-     li.footer__nav-list-item.footer__nav-list-item--title
+    //-         a.footer__nav-list-link(href="#") Property types
+    //-     li.footer__nav-list-item.footer__nav-list-item--body
+    //-         a.footer__nav-list-link(href="#") Guest houses
+    //-     li.footer__nav-list-item.footer__nav-list-item--body
+    //-         a.footer__nav-list-link(href="#") Hotels
+    //-     li.footer__nav-list-item.footer__nav-list-item--body
+    //-         a.footer__nav-list-link(href="#") Apartments
+    //-     li.footer__nav-list-item.footer__nav-list-item--body
+    //-         a.footer__nav-list-link(href="#") Villas
+    //-     li.footer__nav-list-item.footer__nav-list-item--body
+    //-         a.footer__nav-list-link(href="#") Holiday homes
+    //-     li.footer__nav-list-item.footer__nav-list-item--body
+    //-         a.footer__nav-list-link(href="#") Hostels
+    //-   ul.footer__nav-list
+    //-     li.footer__nav-list-item.footer__nav-list-item--title
+    //-         a.footer__nav-list-link(href="#") Support
+    //-     li.footer__nav-list-item.footer__nav-list-item--body
+    //-         a.footer__nav-list-link(href="#") Contact Customer Service
+    //-     li.footer__nav-list-item.footer__nav-list-item--body
+    //-         a.footer__nav-list-link(href="#") FAQ
     .copyright &copy; 2020 Triphouse, Inc. All rights reserved
     

@@ -3,6 +3,9 @@
 - var homesValue = [{imgIco: 'hotel-leopold.jpg', status: 'active', link: 'Hotel Leopold', homesText: 'Saint Petersburg, Russia'},{imgIco: 'apartment-sunshine.jpg', status: 'active', link: 'Apartment Sunshine', homesText: 'Santa  Cruz de Tenerife, Spain'},{imgIco: 'villa-kunerad.jpg', status: 'disabled', link: 'Villa Kunerad', homesText: 'Vysokie Tatry, Slowakia'},{imgIco: 'hostel-friendship.jpg', status: 'disabled', link: 'Hostel Friendship', homesText: 'Berlin, Germany'}]
 - var destValue = [{imgIco: 'maldives.jpg', status: 'active', link: 'Maldives'},{imgIco: 'spain.jpg',  status: 'active', link: 'Spain'},{imgIco: 'norway.jpg',  status: 'disabled', link: 'Norway'},{imgIco: 'island.jpg',  status: 'disabled', link: 'Island'}]
 - var reviewsValue = [{imgIco: 'ubud-bali-resort.jpg', status: 'active', price: '250', amount: '250', hotelName: 'Ubud Bali Resort&SPA', hotelLocation: 'Bali, Indonesia', rating: '9,4', quantity: '1324 reviews', userName: 'Hanna Ivanova', userLocation: 'Ukraine', userComment: 'Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice.'},{imgIco: 'king-kong-hostel.jpg', status: 'disabled', price: '40', amount: '40', hotelName: 'King Kong Hostel', hotelLocation: 'Rotterdam, Netherlands', rating: '8,9', quantity: '2016 reviews', userName: 'Adam Smith', userLocation: 'USA', userComment: "I've been in this hostel for a month and here is the best hostel of all Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and excellent Most importantly, those who work here are kind and good-natured."},{imgIco: 'rokoko-hotel.jpg', status: 'disabled', price: '100', amount: '100', hotelName: 'Rokoko Hotel', hotelLocation: 'Ourika, Marocco', rating: '9,1', quantity: '815 reviews', userName: 'Anika Messer', userLocation: 'Germany', userComment: 'Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at this location during my next stay in Marocco.'}]
+- var footerFirstValue = [{firstValue: "About"},{firstValue: "How Triphouse works"},{firstValue: "Careers"},{firstValue: "Privacy"},{firstValue: "Terms"}]
+- var footerSecondValue = [{secondValue: "Property types"},{secondValue: "Guest houses"},{secondValue: "Hotels"},{secondValue: "Apartments"},{secondValue: "Villas"},{secondValue: "Holiday homes"},{secondValue: "Hostels"}]
+- var footerThirdValue = [{thirdValue: "Support"},{thirdValue: "Contact Customer Service"},{thirdValue: "FAQ"}]
 mixin headParameters
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
@@ -123,3 +126,30 @@ mixin dots
             button.dots__circle.dots__circle--active
           else
             button.dots__circle
+mixin footerFirstList(footerFirstValue)
+    ul.footer__nav-list
+      each value in footerFirstValue
+        if value.firstValue === "About"
+          li.footer__nav-list-item.footer__nav-list-item--title
+            a.footer__nav-list-link(href="#")= value.firstValue
+        else 
+          li.footer__nav-list-item.footer__nav-list-item--body
+            a.footer__nav-list-link(href="#")= value.firstValue
+mixin footerSecondList(footerSecondValue)
+    ul.footer__nav-list
+      each value in footerSecondValue
+        if value.secondValue === "Property types"
+          li.footer__nav-list-item.footer__nav-list-item--title
+            a.footer__nav-list-link(href="#")= value.secondValue
+        else 
+          li.footer__nav-list-item.footer__nav-list-item--body
+            a.footer__nav-list-link(href="#")= value.secondValue
+mixin footerThirdList(footerThirdValue)
+    ul.footer__nav-list
+      each value in footerThirdValue
+        if value.thirdValue === "Support"
+          li.footer__nav-list-item.footer__nav-list-item--title
+            a.footer__nav-list-link(href="#")= value.thirdValue
+        else 
+          li.footer__nav-list-item.footer__nav-list-item--body
+            a.footer__nav-list-link(href="#")= value.thirdValue

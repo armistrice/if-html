@@ -13,7 +13,7 @@
     }
 
     &__logo-wrapper {
-      width: 50%;
+      width: 200px;
       height: 100px;
       background: #3077c6;
       border-radius: 6px;
@@ -39,7 +39,7 @@
 @media only screen and (max-width: 480px) {
   .signup-mobile {
     &__logo-wrapper {
-      width: 50%;
+      width: 150px;
       height: 58px;
       border-radius: 4px;
       margin: 0 16px;
