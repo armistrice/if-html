@@ -7,8 +7,8 @@
 
   &__arrow {
     position: absolute;
-    left: 102.5%;
-    top: 38%;
+    left: 100%;
+    top: 35%;
     transform: translate(-50%, -50%);
   }
 
@@ -26,6 +26,10 @@
 
     &-img-wrapper {
       margin-bottom: 24px;
+
+      &:nth-last-child(1) {
+        position: relative;
+      }
     }
 
     &-text {
@@ -41,7 +45,7 @@
     }
 
     &__arrow {
-      left: 100%;
+      left: 77%;
     }
 
     &__places {
