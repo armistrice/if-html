@@ -17,10 +17,6 @@
     }
   }
 
-  .row--wrap {
-    flex-wrap: wrap;
-  }
-
   &__advantages {
     &-item {
       display: flex;
@@ -36,6 +32,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    &-text {
+      text-align: center;
     }
   }
 }

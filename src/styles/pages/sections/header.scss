@@ -139,8 +139,13 @@
     }
 
     &__input {
+      font-family: Roboto;
       width: 100%;
       height: 100%;
+
+      &:nth-last-child(1) {
+        font-weight: 500;
+      }
 
       &--up {
         &:focus ~ .form__label--up,

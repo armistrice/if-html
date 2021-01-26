@@ -8,23 +8,18 @@
     background: #fff;
 
     &__close {
-      left: 5%;
+      left: 10%;
       top: 50%;
     }
 
     &__logo-wrapper {
-      width: 200px;
-      height: 100px;
+      width: 70px;
+      height: 70px;
       background: #3077c6;
       border-radius: 6px;
       display: flex;
       align-items: center;
-      margin: 0 30px;
-    }
-
-    &__text {
-      width: 120%;
-      margin-right: 22px;
+      margin-left: 100px;
     }
 
     &__link {
@@ -38,20 +33,25 @@
 
 @media only screen and (max-width: 480px) {
   .signup-mobile {
-    &__logo-wrapper {
-      width: 150px;
-      height: 58px;
-      border-radius: 4px;
-      margin: 0 16px;
+    &__close {
+      left: 5%;
     }
 
-    &__text {
-      margin-right: 16px;
+    &__logo-wrapper {
+      margin: 0 20px;
+      height: 58px;
+      width: 58px;
+      border-radius: 4px;
     }
 
     &__link {
-      font-size: 14px;
-      line-height: 16px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &__text {
+      font-size: 10px;
+      max-width: 50%;
     }
   }
 }

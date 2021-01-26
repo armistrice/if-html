@@ -14,8 +14,14 @@
 
   &__places {
     &-item {
+      width: 25%;
       display: flex;
       flex-direction: column;
+      margin-right: 16px;
+
+      &:nth-last-child(1) {
+        margin-right: 0;
+      }
     }
 
     &-img-wrapper {
@@ -24,7 +30,6 @@
 
     &-text {
       color: #bfbfbf;
-      width: 296px;
     }
   }
 }
@@ -41,18 +46,14 @@
 
     &__places {
       &-item {
-        width: 226px;
+        &:nth-child(3) {
+          margin-right: 0;
+        }
       }
 
       &-img-wrapper {
-        width: 226px;
-        height: 226px;
         margin-bottom: 16px;
       }
-    }
-
-    &-text {
-      width: 226px;
     }
   }
 }
@@ -68,19 +69,9 @@
     }
 
     &__places {
-      &-item {
-        width: 156px;
-      }
-
       &-img-wrapper {
-        width: 156px;
-        height: 156px;
         margin-bottom: 8px;
       }
-    }
-
-    &-text {
-      width: 156px;
     }
   }
 }
